@@ -1,160 +1,130 @@
-#capters1
- shell���ܺͽű�����
-     example1  ��¼ϵͳ
-     example2  ������ִ������
-     example3  �Զ���shell
-     example4  ��ȡ����
-     example5  һ���򵥵�shell
-     example6  Զ�̲���
-     example7  С��
- 
- 
- #capters2
-  �����ļ���Ŀ¼
-      example1  �г��ļ�
-      example2  �鿴���ı䵱ǰĿ¼
-      example3  �鿴�ļ�����
-      example4  ͳ���ļ�����������
-      example5  �����ļ���Ŀ¼
-      example6  ɾ���ļ���Ŀ¼
-      example7  �������ļ���Ŀ¼
-      example8  �ƶ����ļ���Ŀ¼
-      example9  �����ļ���Ŀ¼�ķ�������
-      example10 �����ļ���Ŀ¼
-      example11 �ļ������������Ȩ��
-      example12 С��
+第1章 Shell介绍和脚本基础
+1.1 登录到系统
+1.2 交互地执行命令
+1.3 自定义Shell
+1.4 获取帮助
+1.5 一个简单的Shell脚本
+1.6 远程操作
+1.7 小结
 
+第2章 操作文件和目录
+2.1 列出文件
+2.2 查看并改变当前目录
+2.3 查看文件内容
+2.4 统计文件行数和字数
+2.5 创建文件和目录
+2.6 删除文件和目录
+2.7 重命名文件和目录
+2.8 移动文件和目录
+2.9 建立文件和目录的符号链接
+2.10 复制文件和目录
+2.11 文件所有者与访问权限
+2.12 小结
 
- #capters3
-  ��������ض���͹ܵ�
-      example1  ��׼���
-      example2  ��׼����
-      example3  ��׼�������
-      example4  �ܵ�
-      example5  ������������ض���
-      example6  Here Document
-      example7  �ļ�������
-      example8  С��
+第3章 输入/输出重定向和管道
+3.1 标准输出
+3.2 标准输入
+3.3 标准错误输出
+3.4 管道
+3.5 块语句的输出和重定向
+3.6 Here Document
+3.7 文件描述符
+3.8 小结
 
- 
- #capters4
-  ����
-      example1  �鿴����
-      example2  ǰ̨���̺ͺ�̨����
-      example3  ��ֹ��������
-      example4  /proc/�ļ�ϵͳ
-      example5  С��
+第4章 进程
+4.1 查看进程
+4.2 前台进程和后台进程
+4.3 终止进程运行
+4.4 /proc/文件系统
+4.5 小结
 
- #capters5
-  �ı��������ַ�������
-      example1  ���õ��ļ�����
-      example2  ��������
-      example3  С��
+第5章 文本处理和字符串操作
+5.1 常用的文本操作
+5.2 其他操作
+5.3 小结
 
+第6章 变量
+6.1 普通变量
+6.2 数组变量
+6.3 环境变量
+6.4 Shell变量
+6.5 特殊变量
+6.6 小结
 
-  #capters6
-   ����
-       example1  ��ͨ����
-       example2  �������
-       example3  ��������
-       example4  shell����
-       example5  �������
-       example6  С��
+第7章 流程控制
+7.1 if/else语句
+7.2 case语句
+7.3 while循环
+7.4 until循环
+7.5 for循环
+7.6 select循环
+7.7 循环嵌套
+7.8 break语句
+7.9 continue语句
+7.1 0小结
 
+第8章 替换
+8.1 变量替换的高级形式
+8.2 文件名替换
+8.3 命令替换
+8.4 算术运算替换
+8.5 小结
 
-   #capters7
-    ���̿���
-        example1  if/else���
-        example2  case���
-        example3  whileѭ��
-        example4  untilѭ��
-        example5  forѭ��
-        example6  selectѭ��
-        example7  ѭ��Ƕ��
-        example8  break���
-        example9  continue���
-        example10 С��
+第9章 引用
+9.1 使用反斜杠
+9.2 使用单引号
+9.3 使用双引号
+9.4 引用的其他应用
+9.5 小结
 
+第10章 函数
+10.1 定义和使用函数
+10.2 检查函数定义和取消函数定义
+10.3 参数和返回数据
+10.4 变量的作用域
+10.5 递归调用
+10.6 函数库
+10.7 小结
 
-  #capters8
-   �滻
-       example1  �ļ��滻�ĸ߼���ʽ
-       example2  �ļ����滻
-       example3  �����滻
-       example4  ���������滻
-       example5  С��
+第11章 其他常用工具
+11.1 使用find查找文件
+11.2 xargs
+11.3 其他查找文件的方法
+11.4 判断文件的类型
+11.5 数据备份
+11.6 压缩文件
+11.7 文件备份
+11.8 下载工具
+11.9 小结
 
+第12章 处理信号
+12.1 如何表达信号
+12.2 如何处理信号
+12.3 忽略信号
+12.4 定时器
+12.5 小结
 
-  #capters9
-   ����
-       example1  ʹ�÷�б��
-       example2  ʹ�õ�����
-       example3  ʹ��˫����
-       example4  ���ŵ�����Ӧ��
-       example5  С��
+第13章 使用sed处理文本
+13.1 sed如何工作
+13.2 选择要操作的行
+13.3 重用匹配到的字符串
+13.4 小结
 
+第14章 使用awk处理文本
+14.1 awk如何工作
+14.2 使用变量
+14.3 控制语句
+14.4 使用函数
+14.5 小结
 
-  #capters10
-   ����
-       example1  �����ʹ�ú���
-       example2  ��麯�������ȡ����������
-       example3  �����ͷ�������
-       example4  ������������
-       example5  �ݹ����
-       example6  ������
-       example7  С��
+第15章 grep和高级正则表达式
+15.1 grep的基本用法
+15.2 高级正则表达式
+15.3 小结
 
-
-  #capters11
-   �������ù���
-       example1  ʹ��find�����ļ�
-       example2  xargs
-       example3  ���������ļ��ķ���
-       example4  �ж��ļ�������
-       example5  ���ݱ���
-       example6  ѹ���ļ�
-       example7  �ļ�����
-       example8  ���ع���
-       example9  С��
-
-
-  #capters12
-   �����ź�
-       example1  ��α����ź�
-       example2  ��δ����ź�
-       example3  �����ź�
-       example4  ��ʱ��
-       example5  С��
-
-
-  #capters13
-   ʹ��sed�����ı�
-       example1  sed��ι���
-       example2  ѡ��Ҫ��������
-       example3  ����ƥ�䵽���ַ���
-       example4  С��
-
-
-  #capters13
-   ʹ��awk�����ı�
-       example1  awk��ι���
-       example2  ʹ�ñ���
-       example3  �������
-       example4  ��ʹ�ú���ʱ��
-       example5  С��
-
-
-  #capters13
-   grep�͸߼��������ʽ
-       example1  grep�Ļ����÷�
-       example2  �߼��������ʽ
-       example3  С��
-
-
-  #capters13
-   debug shell�ű�
-       example1  ����������Ϣ
-       example2  ����debugģʽ
-       example3  �ڽű�������debug����
-       example4  ʹ��trap����
-       example5  С��
+第16章 Debug Shell脚本
+16.1 分析报错信息
+16.2 进入debug模式
+16.3 在脚本中添加debug功能
+16.4 使用trap命令
+16.5 小结
