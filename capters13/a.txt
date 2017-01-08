@@ -1,0 +1,2 @@
+s/test@qq.com/nj@qq.com/g
+s/2/3/g

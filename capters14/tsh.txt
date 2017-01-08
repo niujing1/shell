@@ -1,0 +1,8 @@
+N:aaaa
+N:aaaa
+N:aaaa
+N:aaaa
+B:bbbbb
+B:bbbbb
+S:oooo
+N:aaaa

@@ -1,0 +1,4 @@
+ls: /bin/this_file_not_exist: No such file or directory
+/bin/bash
+/bin/dd
+/bin/ls

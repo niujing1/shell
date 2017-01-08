@@ -15,6 +15,8 @@ PATHNAME=~/www/shell/capters1/1.sh
 echo
 echo -e "The whole pathname:\n\t $PATHNAME"
 echo
+exit 0
+
 #执行dirname得到目录名
 DIRNAME=$(dirname $PATHNAME)
 
