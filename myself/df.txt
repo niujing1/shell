@@ -1,0 +1,9 @@
+Filesystem                     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
+/dev/disk1                    233Gi   54Gi  178Gi    24% 14265181 46716065   23%   /
+devfs                         189Ki  189Ki    0Bi   100%      654        0  100%   /dev
+map -hosts                      0Bi    0Bi    0Bi   100%        0        0  100%   /net
+map auto_home                   0Bi    0Bi    0Bi   100%        0        0  100%   /home
+10.0.11.96:/home/niujing/git   43Gi   16Gi   25Gi    39%   196029  2665571    7%   /Users/nj/www/96
+10.0.11.96:/home/niujing/git   43Gi   18Gi   23Gi    43%   196203  2665397    7%   /Users/nj/www/96
+/dev/disk2s1                  500Mi  228Mi  272Mi    46%    58342    69646   46%   /Volumes/JDK 8 Update 101
+/dev/disk3s2                  110Mi   88Mi   23Mi    80%    22502     5760   80%   /Volumes/QQ

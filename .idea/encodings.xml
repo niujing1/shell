@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/capters2/10.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/11.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/3.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/4.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/5.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/6.sh" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/capters2/9.sh" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/readme.txt" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,11 @@
+# 主循环开始前打印标题
+BEGIN{
+	  printf "%-15s%s\n","USERNAME","UID";
+	  printf "--------------\n";
+}
+#主循环开始执行
+#从／etc／passwd读取文件
+
+{
+	printf "%-15s%s\n",$1,$3
+}

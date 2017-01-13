@@ -1,0 +1,88 @@
+
+1 tab键补齐
+2 命令历史(!5 重新执行第5条历史命令 ctrl+L 清屏   !ser重新执行最后一条ser开头的命令)
+3 命令补齐
+4 命令别名(查看 alias )
+5 输出重定向(>覆盖式重定向 >>追加式重定向  1> 正确重定向  2>错误重定向 ls nofile 2> error.txt )
+
+
+free -m 查看内存状况
+free -m|grep -i mem|awk '{print $4}'匹配查找结果中内存的使用,把第四列打印
+
+#用户信息(用户)
+useradd uname添加一个用户
+userdel -r uname删除一个用户
+passwd uname 修改user1的密码
+id uname查看一个用户
+
+
+#用户组(组)
+把用户加入组
+gpasswd -a user1 root 把user1用户加入到root组
+把组中用户删除
+gpasswd -d user1 root 把user1用户从root组删除
+
+#权限 chmod  acl  sudo
+chmod o+w file #给other file的写入权限
+(同时other用户组的所有用户都拥有w的权限,可以把user1加入到具有写入权限的用户组)
+chmod o-x,o-w file
+chmod g-w file
+
+#权限细化(acl 分配权限)
+root file rw-
+root file r--
+other file r--
+user1 file rw
+user2 file rx
+user3 file wx
+user4 file rwx
+
+setfacl 设置文件权限 setfacl -m u:user1:rw root.txt
+#上边的需求可以用以下代码实现
+setfacl -m u:user1:rw root.txt
+setfacl -m u:user2:rx root.txt
+setfacl -m u:user3:wx root.txt
+setfacl -m u:user4:rwx root.txt
+
+getfacl 获取文件权限 getfacl root.txt
+
+删除文件权限
+setfacl -x user:user3  root.txt
+
+清空文件权限
+setfacl -b root.txt  #恢复到最初的权限设置
+
+创建和删除文件权限
+#需要对目录设置facl权限即可
+setfacl -m u:user:rwx ~/www/shell
+
+#设置文件目录以及子目录的权限
+setfacl -m u:user4:rwx  -R ~/www/shell
+
+#后期目录中添加的的子目录和文件继承当前目录的权限
+setfacl -m d:u:user4:rwx -R ~/www/shell   #d代表defalut 就是跟当前目录设置现有的目录权限
+
+#sudo设置用户对命令的执行权限
+1 设置
+visudo
+user4 localhost=/usr/sbin/useradd #need pass
+
+user2 ALL=NOPASSWD:/usr/bin/passwd #no need pass
+
+2 使用sudo授权命令
+sudo /usr/sbin/useradd user4
+sudo /usr/sbin/userdel -r user4
+
+3 使用无密码的sudo授权命令
+sudo localhost=NOPASSWD:/usr/sbin/userdel -r user4
+sudo ALL=NOPASSED:/usr/sbin/userdel -r user4
+
+
+
+
+
+
+
+
+
+
