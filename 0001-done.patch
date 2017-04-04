@@ -1,0 +1,6102 @@
+From a0f1d1e546b60eb3840dae7bcae4a70287a87f1c Mon Sep 17 00:00:00 2001
+From: njyishi <943656057@qq.com>
+Date: Sun, 8 Jan 2017 10:29:05 -0800
+Subject: [PATCH 1/2] done
+
+Signed-off-by: njyishi <943656057@qq.com>
+---
+ .gitignore                                         |   0
+ .idea/dictionaries/nj.xml                          |   0
+ .idea/encodings.xml                                |   7 +
+ .idea/vcs.xml                                      |   0
+ .idea/webResources.xml                             |  14 ++
+ README.md                                          |   0
+ capters1/1.sh                                      |   0
+ capters1/2.sh                                      |   0
+ capters1/3.sh                                      |   0
+ capters1/4.sh                                      |   0
+ capters1/5.sh                                      |   0
+ capters1/6.sh                                      |   0
+ capters1/7.txt                                     |   0
+ capters1/q.sh                                      |   0
+ capters10/1.sh                                     |   9 +
+ capters11/1-2.sh                                   |  24 +++
+ capters11/1-3.sh                                   |  11 +
+ capters11/1-4.sh                                   |   6 +
+ capters11/1.sh                                     |  50 +++++
+ capters11/2.sh                                     |  55 +++++
+ capters11/3.sh                                     |  12 ++
+ capters11/4.sh                                     |  46 +++++
+ capters11/5.sh                                     |  38 ++++
+ capters11/6-2.sh                                   |  39 ++++
+ capters11/6.sh                                     |  31 +++
+ capters11/7-2.sh                                   |   7 +
+ capters11/7.sh                                     |   9 +
+ capters11/8.sh                                     |  56 +++++
+ capters11/9.txt                                    |  12 ++
+ capters11/all.tar                                  | Bin 0 -> 1068544 bytes
+ capters11/all.tar.gz                               | Bin 0 -> 6307 bytes
+ capters11/data.file                                | Bin 0 -> 1048576 bytes
+ capters11/delfile.list                             |   1 +
+ capters11/ssh                                      |   0
+ capters12/1-2.sh                                   |  38 ++++
+ capters12/1.sh                                     |  12 ++
+ capters12/2-2.sh                                   |  69 +++++++
+ capters12/2.sh                                     |  54 +++++
+ capters12/3-1.sh                                   |  41 ++++
+ capters12/3.sh                                     |  24 +++
+ capters12/4.sh                                     |  62 ++++++
+ capters12/5.txt                                    |   9 +
+ capters12/tmpfile.71310                            |   1 +
+ capters13/1-2.sh                                   |  21 ++
+ capters13/1-3.sh                                   |  23 +++
+ capters13/1-4.sh                                   |  21 ++
+ capters13/1-5.sh                                   |   7 +
+ capters13/1.sh                                     |  26 +++
+ capters13/2.sh                                     |  46 +++++
+ capters13/3.sh                                     |  11 +
+ capters13/4.txt                                    |   9 +
+ capters13/a.txt                                    |   2 +
+ capters13/test.txt                                 |   8 +
+ capters14/1-2.sh                                   |  24 +++
+ capters14/1-3.sh                                   |   4 +
+ capters14/1-4.sh                                   |   2 +
+ capters14/1.sh                                     |   4 +
+ capters14/2-2.sh                                   |  45 ++++
+ capters14/2-3.sh                                   |  15 ++
+ capters14/2-4.sh                                   |  33 +++
+ capters14/2-5.sh                                   |   3 +
+ capters14/2-6.sh                                   |  30 +++
+ capters14/2-7.sh                                   |   3 +
+ capters14/2.sh                                     |  17 ++
+ capters14/3.sh                                     |  59 ++++++
+ capters14/test.awk                                 |  18 ++
+ capters14/test.txt                                 |  15 ++
+ capters14/tsh.txt                                  |   8 +
+ capters14/user.txt                                 |  11 +
+ capters15/1.sh                                     |  16 ++
+ capters15/2.sh                                     |   6 +
+ capters2/1.sh                                      |   0
+ capters2/10.sh                                     |   0
+ capters2/11.sh                                     |   0
+ capters2/12.sh                                     |   0
+ capters2/2.sh                                      |   2 +
+ capters2/3.sh                                      |   0
+ capters2/4.sh                                      |   0
+ capters2/5.sh                                      |   0
+ capters2/6.sh                                      |   0
+ capters2/7.sh                                      |   0
+ capters2/8.sh                                      |   0
+ capters2/9.sh                                      |   0
+ capters3/.idea/capters3.iml                        |   8 +
+ capters3/.idea/copyright/profiles_settings.xml     |   3 +
+ capters3/.idea/misc.xml                            |  71 +++++++
+ capters3/.idea/modules.xml                         |   8 +
+ capters3/.idea/workspace.xml                       | 105 ++++++++++
+ capters3/1.sh                                      |  36 ++++
+ capters3/1.tt                                      |   0
+ capters3/2.sh                                      |  18 ++
+ capters3/2.tt                                      |   0
+ capters3/3.sh                                      |  39 ++++
+ capters3/4.2                                       |   3 +-
+ capters3/4.2.sh                                    |  12 +-
+ capters3/4.3.sh                                    |  17 +-
+ capters3/4.sh                                      |  22 ++
+ capters3/4.tt                                      |   0
+ capters3/5-1.sh                                    |  19 ++
+ capters3/5-2.sh                                    |  43 ++++
+ capters3/5.sh                                      |  17 ++
+ capters3/5.tt                                      |   0
+ capters3/6.sh                                      |   8 +
+ capters3/6.tt                                      |   0
+ capters3/7-2.sh                                    |  28 ++-
+ capters3/7-3.sh                                    |   8 +
+ capters3/7.sh                                      |  12 ++
+ capters3/7.tt                                      |   0
+ capters3/8.sh                                      |   8 +
+ capters3/exec.out                                  |   3 +
+ capters3/null.txt                                  | 101 +++++++++
+ capters3/same.out                                  |   4 +
+ capters3/sort.out                                  |  96 +++++++++
+ capters3/sort2.out                                 |  96 +++++++++
+ capters3/test.err                                  |   1 +
+ capters3/test.out                                  |   3 +
+ capters3/test.txt                                  |   5 +
+ capters3/test.txt.lined                            |   5 +
+ capters3/y.out                                     |  28 +++
+ capters4/1-2.sh                                    |  16 ++
+ capters4/1.sh                                      |  12 ++
+ capters4/2.sh                                      |  43 ++++
+ capters4/3-2.sh                                    |  27 +++
+ capters4/3.sh                                      |  21 ++
+ capters4/4-2.sh                                    |  25 +++
+ capters4/4.sh                                      |  27 +++
+ capters4/5.txt                                     |   9 +
+ capters5/1-2.sh                                    |  65 ++++++
+ capters5/1-3.sh                                    |  60 ++++++
+ capters5/1-4.sh                                    |  10 +
+ capters5/1.sh                                      |  57 +++++
+ capters5/2-2.sh                                    |  26 +++
+ capters5/2-3.sh                                    |  15 ++
+ capters5/2-4.sh                                    |   5 +
+ capters5/2-test.sh                                 |   6 +
+ capters5/2.sh                                      |  22 ++
+ capters5/3.txt                                     |  11 +
+ capters5/name.txt                                  |   7 +
+ capters5/t.sh                                      |   2 +
+ capters5/tel.txt                                   |   3 +
+ capters5/test2.sh                                  |   9 +
+ capters5/testif.sh                                 |  10 +
+ capters6/1-2.sh                                    |  34 +++
+ capters6/1-3.sh                                    |  19 ++
+ capters6/1.sh                                      |  21 ++
+ capters6/2.sh                                      |  71 +++++++
+ capters6/3.sh                                      |  36 ++++
+ capters6/4.sh                                      |  69 +++++++
+ capters6/5-2.sh                                    |  39 ++++
+ capters6/5-3.sh                                    |  40 ++++
+ capters6/5-4.sh                                    |  56 +++++
+ capters6/5.sh                                      |  41 ++++
+ capters6/6.txt                                     |  10 +
+ capters6/child.sh                                  |  15 ++
+ capters7/1-2.sh                                    |  55 +++++
+ capters7/1.sh                                      |  23 +++
+ capters7/10.txt                                    |   9 +
+ capters7/2.sh                                      |  81 ++++++++
+ capters7/3.sh                                      |  35 ++++
+ capters7/4.sh                                      |  33 +++
+ capters7/5.sh                                      |  28 +++
+ capters7/6-2.sh                                    |  44 ++++
+ capters7/6.sh                                      |  41 ++++
+ capters7/7.sh                                      |  49 +++++
+ capters7/8.sh                                      |  62 ++++++
+ capters7/9.sh                                      |  62 ++++++
+ capters7/eee.txt                                   |   1 +
+ capters7/error.log                                 |   0
+ capters7/wewe.txt                                  |   1 +
+ capters8/1.sh                                      |  94 +++++++++
+ capters8/2.sh                                      |  67 ++++++
+ capters8/3.sh                                      |  19 ++
+ capters8/4.sh                                      |  17 ++
+ capters8/globbing/a.txt                            |   0
+ capters8/globbing/b.txt                            |   0
+ capters8/globbing/c.txt                            |   0
+ capters8/globbing/tmp.1                            |   0
+ capters8/globbing/tmp.2                            |   0
+ capters8/globbing/tmp.3                            |   0
+ capters8/globbing/tmp.4                            |   0
+ common.sh                                          |   4 +-
+ demo/logRotate.sh                                  |   3 +
+ demo/mysql.sh                                      |  28 +++
+ demo/readMe.txt                                    |   4 +
+ ...70\270\347\224\250\345\221\275\344\273\244.txt" |  88 ++++++++
+ myself/clear.sh                                    |   7 +
+ myself/config.txt                                  |  53 +++++
+ myself/df.txt                                      |   9 +
+ myself/for-2.sh                                    |   7 +
+ myself/login.sh                                    |  11 +
+ myself/pubdir.log                                  |   6 +
+ myself/redirect.sh                                 |   4 +
+ readme.txt                                         |   0
+ rotate.sh                                          |  22 ++
+ summery.txt                                        | 230 +++++++++++++++++++++
+ 195 files changed, 4184 insertions(+), 5 deletions(-)
+ mode change 100644 => 100755 .gitignore
+ mode change 100644 => 100755 .idea/dictionaries/nj.xml
+ mode change 100644 => 100755 .idea/encodings.xml
+ mode change 100644 => 100755 .idea/vcs.xml
+ create mode 100755 .idea/webResources.xml
+ mode change 100644 => 100755 README.md
+ mode change 100644 => 100755 capters1/1.sh
+ mode change 100644 => 100755 capters1/2.sh
+ mode change 100644 => 100755 capters1/3.sh
+ mode change 100644 => 100755 capters1/4.sh
+ mode change 100644 => 100755 capters1/5.sh
+ mode change 100644 => 100755 capters1/6.sh
+ mode change 100644 => 100755 capters1/7.txt
+ mode change 100644 => 100755 capters1/q.sh
+ create mode 100755 capters10/1.sh
+ create mode 100755 capters11/1-2.sh
+ create mode 100755 capters11/1-3.sh
+ create mode 100755 capters11/1-4.sh
+ create mode 100755 capters11/1.sh
+ create mode 100755 capters11/2.sh
+ create mode 100755 capters11/3.sh
+ create mode 100755 capters11/4.sh
+ create mode 100755 capters11/5.sh
+ create mode 100755 capters11/6-2.sh
+ create mode 100755 capters11/6.sh
+ create mode 100755 capters11/7-2.sh
+ create mode 100755 capters11/7.sh
+ create mode 100755 capters11/8.sh
+ create mode 100755 capters11/9.txt
+ create mode 100755 capters11/all.tar
+ create mode 100755 capters11/all.tar.gz
+ create mode 100755 capters11/data.file
+ create mode 100755 capters11/delfile.list
+ create mode 100755 capters11/ssh
+ create mode 100755 capters12/1-2.sh
+ create mode 100755 capters12/1.sh
+ create mode 100755 capters12/2-2.sh
+ create mode 100755 capters12/2.sh
+ create mode 100755 capters12/3-1.sh
+ create mode 100755 capters12/3.sh
+ create mode 100755 capters12/4.sh
+ create mode 100755 capters12/5.txt
+ create mode 100755 capters12/tmpfile.71310
+ create mode 100755 capters13/1-2.sh
+ create mode 100755 capters13/1-3.sh
+ create mode 100755 capters13/1-4.sh
+ create mode 100755 capters13/1-5.sh
+ create mode 100755 capters13/1.sh
+ create mode 100755 capters13/2.sh
+ create mode 100755 capters13/3.sh
+ create mode 100755 capters13/4.txt
+ create mode 100755 capters13/a.txt
+ create mode 100755 capters13/test.txt
+ create mode 100755 capters14/1-2.sh
+ create mode 100755 capters14/1-3.sh
+ create mode 100755 capters14/1-4.sh
+ create mode 100755 capters14/1.sh
+ create mode 100755 capters14/2-2.sh
+ create mode 100755 capters14/2-3.sh
+ create mode 100755 capters14/2-4.sh
+ create mode 100755 capters14/2-5.sh
+ create mode 100755 capters14/2-6.sh
+ create mode 100755 capters14/2-7.sh
+ create mode 100755 capters14/2.sh
+ create mode 100755 capters14/3.sh
+ create mode 100755 capters14/test.awk
+ create mode 100755 capters14/test.txt
+ create mode 100755 capters14/tsh.txt
+ create mode 100755 capters14/user.txt
+ create mode 100755 capters15/1.sh
+ create mode 100755 capters15/2.sh
+ mode change 100644 => 100755 capters2/1.sh
+ mode change 100644 => 100755 capters2/10.sh
+ mode change 100644 => 100755 capters2/11.sh
+ mode change 100644 => 100755 capters2/12.sh
+ mode change 100644 => 100755 capters2/2.sh
+ mode change 100644 => 100755 capters2/3.sh
+ mode change 100644 => 100755 capters2/4.sh
+ mode change 100644 => 100755 capters2/5.sh
+ mode change 100644 => 100755 capters2/6.sh
+ mode change 100644 => 100755 capters2/7.sh
+ mode change 100644 => 100755 capters2/8.sh
+ mode change 100644 => 100755 capters2/9.sh
+ create mode 100755 capters3/.idea/capters3.iml
+ create mode 100755 capters3/.idea/copyright/profiles_settings.xml
+ create mode 100755 capters3/.idea/misc.xml
+ create mode 100755 capters3/.idea/modules.xml
+ create mode 100755 capters3/.idea/workspace.xml
+ create mode 100755 capters3/1.sh
+ create mode 100755 capters3/1.tt
+ create mode 100755 capters3/2.sh
+ create mode 100755 capters3/2.tt
+ create mode 100755 capters3/3.sh
+ mode change 100644 => 100755 capters3/4.2
+ mode change 100644 => 100755 capters3/4.2.sh
+ mode change 100644 => 100755 capters3/4.3.sh
+ create mode 100755 capters3/4.sh
+ create mode 100755 capters3/4.tt
+ create mode 100755 capters3/5-1.sh
+ create mode 100755 capters3/5-2.sh
+ create mode 100755 capters3/5.sh
+ create mode 100755 capters3/5.tt
+ create mode 100755 capters3/6.sh
+ create mode 100755 capters3/6.tt
+ mode change 100644 => 100755 capters3/7-2.sh
+ create mode 100755 capters3/7-3.sh
+ create mode 100755 capters3/7.sh
+ create mode 100755 capters3/7.tt
+ create mode 100755 capters3/8.sh
+ create mode 100755 capters3/exec.out
+ create mode 100755 capters3/null.txt
+ create mode 100755 capters3/same.out
+ create mode 100755 capters3/sort.out
+ create mode 100755 capters3/sort2.out
+ create mode 100755 capters3/test.err
+ create mode 100755 capters3/test.out
+ create mode 100755 capters3/test.txt
+ create mode 100755 capters3/test.txt.lined
+ create mode 100755 capters3/y.out
+ create mode 100755 capters4/1-2.sh
+ create mode 100755 capters4/1.sh
+ create mode 100755 capters4/2.sh
+ create mode 100755 capters4/3-2.sh
+ create mode 100755 capters4/3.sh
+ create mode 100755 capters4/4-2.sh
+ create mode 100755 capters4/4.sh
+ create mode 100755 capters4/5.txt
+ create mode 100755 capters5/1-2.sh
+ create mode 100755 capters5/1-3.sh
+ create mode 100755 capters5/1-4.sh
+ create mode 100755 capters5/1.sh
+ create mode 100755 capters5/2-2.sh
+ create mode 100755 capters5/2-3.sh
+ create mode 100755 capters5/2-4.sh
+ create mode 100755 capters5/2-test.sh
+ create mode 100755 capters5/2.sh
+ create mode 100755 capters5/3.txt
+ create mode 100755 capters5/name.txt
+ create mode 100755 capters5/t.sh
+ create mode 100755 capters5/tel.txt
+ create mode 100755 capters5/test2.sh
+ create mode 100755 capters5/testif.sh
+ create mode 100755 capters6/1-2.sh
+ create mode 100755 capters6/1-3.sh
+ create mode 100755 capters6/1.sh
+ create mode 100755 capters6/2.sh
+ create mode 100755 capters6/3.sh
+ create mode 100755 capters6/4.sh
+ create mode 100755 capters6/5-2.sh
+ create mode 100755 capters6/5-3.sh
+ create mode 100755 capters6/5-4.sh
+ create mode 100755 capters6/5.sh
+ create mode 100755 capters6/6.txt
+ create mode 100755 capters6/child.sh
+ create mode 100755 capters7/1-2.sh
+ create mode 100755 capters7/1.sh
+ create mode 100755 capters7/10.txt
+ create mode 100755 capters7/2.sh
+ create mode 100755 capters7/3.sh
+ create mode 100755 capters7/4.sh
+ create mode 100755 capters7/5.sh
+ create mode 100755 capters7/6-2.sh
+ create mode 100755 capters7/6.sh
+ create mode 100755 capters7/7.sh
+ create mode 100755 capters7/8.sh
+ create mode 100755 capters7/9.sh
+ create mode 100755 capters7/eee.txt
+ create mode 100755 capters7/error.log
+ create mode 100755 capters7/wewe.txt
+ create mode 100755 capters8/1.sh
+ create mode 100755 capters8/2.sh
+ create mode 100755 capters8/3.sh
+ create mode 100755 capters8/4.sh
+ create mode 100755 capters8/globbing/a.txt
+ create mode 100755 capters8/globbing/b.txt
+ create mode 100755 capters8/globbing/c.txt
+ create mode 100755 capters8/globbing/tmp.1
+ create mode 100755 capters8/globbing/tmp.2
+ create mode 100755 capters8/globbing/tmp.3
+ create mode 100755 capters8/globbing/tmp.4
+ mode change 100644 => 100755 common.sh
+ create mode 100755 demo/logRotate.sh
+ create mode 100755 demo/mysql.sh
+ create mode 100755 demo/readMe.txt
+ create mode 100755 "myself/bash\345\270\270\347\224\250\345\221\275\344\273\244.txt"
+ create mode 100755 myself/clear.sh
+ create mode 100755 myself/config.txt
+ create mode 100755 myself/df.txt
+ create mode 100755 myself/for-2.sh
+ create mode 100755 myself/login.sh
+ create mode 100755 myself/pubdir.log
+ create mode 100755 myself/redirect.sh
+ mode change 100644 => 100755 readme.txt
+ create mode 100755 rotate.sh
+ create mode 100755 summery.txt
+
+diff --git a/.gitignore b/.gitignore
+old mode 100644
+new mode 100755
+diff --git a/.idea/dictionaries/nj.xml b/.idea/dictionaries/nj.xml
+old mode 100644
+new mode 100755
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+old mode 100644
+new mode 100755
+index 7ed83c6..25efdeb
+--- a/.idea/encodings.xml
++++ b/.idea/encodings.xml
+@@ -1,6 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/capters2/10.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/11.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/3.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/4.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/5.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/6.sh" charset="GB2312" />
++    <file url="file://$PROJECT_DIR$/capters2/9.sh" charset="GB2312" />
+     <file url="file://$PROJECT_DIR$/readme.txt" charset="UTF-8" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+old mode 100644
+new mode 100755
+diff --git a/.idea/webResources.xml b/.idea/webResources.xml
+new file mode 100755
+index 0000000..c9c96b7
+--- /dev/null
++++ b/.idea/webResources.xml
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="WebResourcesPaths">
++    <contentEntries>
++      <entry url="file://$PROJECT_DIR$">
++        <entryData>
++          <resourceRoots>
++            <path value="file://$PROJECT_DIR$/Log/test" />
++          </resourceRoots>
++        </entryData>
++      </entry>
++    </contentEntries>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/README.md b/README.md
+old mode 100644
+new mode 100755
+diff --git a/capters1/1.sh b/capters1/1.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/2.sh b/capters1/2.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/3.sh b/capters1/3.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/4.sh b/capters1/4.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/5.sh b/capters1/5.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/6.sh b/capters1/6.sh
+old mode 100644
+new mode 100755
+diff --git a/capters1/7.txt b/capters1/7.txt
+old mode 100644
+new mode 100755
+diff --git a/capters1/q.sh b/capters1/q.sh
+old mode 100644
+new mode 100755
+diff --git a/capters10/1.sh b/capters10/1.sh
+new file mode 100755
+index 0000000..8fe036c
+--- /dev/null
++++ b/capters10/1.sh
+@@ -0,0 +1,9 @@
++#!/usr/bin/env bash
++
++#测试函数
++test()
++{
++        echo "function test"
++}
++
++test  ##直接调用就可以,如同正常的命令
+\ No newline at end of file
+diff --git a/capters11/1-2.sh b/capters11/1-2.sh
+new file mode 100755
+index 0000000..c87fb37
+--- /dev/null
++++ b/capters11/1-2.sh
+@@ -0,0 +1,24 @@
++#!/usr/bin/env bash
++#TODO: 可以扩展为一个输入指定目录,指定扩展名的文件移动到desc文件夹的小程序
++
++# 递归移动文件
++#创建临时目录
++mkdir -p ~/www/shell/tmp
++
++#如果创建成果
++if [ $? -eq 0 ]
++then
++        #在主目录下查找所有的mp3文件
++        #把文件移动到指定文件夹
++        #最后的分号代表子句的结束
++        #-i不区分大小写
++        #-print吧文件路径打印到标准输出
++        # -exec和 ; 之间的内容就是它要处理的内容
++        find ./ -iname "*.mp3" -print -exec mv '{}' ~/www/shell/tmp ';'
++fi
++
++echo
++echo "All files moved"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters11/1-3.sh b/capters11/1-3.sh
+new file mode 100755
+index 0000000..77768b4
+--- /dev/null
++++ b/capters11/1-3.sh
+@@ -0,0 +1,11 @@
++#!/usr/bin/env bash
++
++#查找5天前修改的文件
++find . -type f -mtime +5 -print
++
++#查找6天气修改的文件
++find . -type f -mtime 6 -print
++
++# 查找3天以前修改,但是修改时间不超过4天的
++find . -type f -mtime +3 -mtime -4 -print
++
+diff --git a/capters11/1-4.sh b/capters11/1-4.sh
+new file mode 100755
+index 0000000..51cf8b6
+--- /dev/null
++++ b/capters11/1-4.sh
+@@ -0,0 +1,6 @@
++#!/usr/bin/env bash
++
++#查找用户为nj 文件以*.c 或者 *.sh 结尾 属性为644,8天之内为访问的文件,
++#-o表示条件之间是或的关系,-a表示条件之间是与的关系 -perm指定文件权限
++# !逻辑取反 !\(-name '*.sh' -o -name '*.h'\) 所有的不是sh 或者 h结尾的文件
++find / -user nj -a \(-name '*.sh' -o -name '*.h'\) -a -perm 644 -a -atime +8 -print
+\ No newline at end of file
+diff --git a/capters11/1.sh b/capters11/1.sh
+new file mode 100755
+index 0000000..b4e5855
+--- /dev/null
++++ b/capters11/1.sh
+@@ -0,0 +1,50 @@
++#!/usr/bin/env bash
++
++#使用find查找所有文件 .o 文件
++
++echo
++echo "enter a directory which you want find"
++echo -n " Type 'quit' to exit "
++echo
++
++#读取用户输入的目录,在改目录下查找
++read SOURCE_DIR
++
++while [ "$SOURCE_DIR" != "quit" ]
++do
++        if [ -d "$SOURCE_DIR" ]
++        then
++                echo
++                echo "Finding all *.o files in '$SOURCE_DIR'..."
++                echo
++                echo "Directory '$SOURCE_DIR' contains the following '*'.o files"
++                echo
++
++                #打印出所有*。o文件
++                find "$SOURCE_DIR" -name \*.o
++
++                #可以使用单引号或者双银行引用*以及;,防止shell处理,记录在file.list
++                find "$SOURCE_DIR" -name \*.o -print -exec rm '{}' ';'>delfile.list
++
++                echo
++                echo "All *.o files have been removed"
++                echo
++
++                echo "Clean up another directory shich contains .o files"
++                echo -n "Enter another dir or quit"
++
++                read SOURCE_DIR
++
++        else
++                echo
++                echo "'$SOURCE_DIR' is not a dir,input dir again"
++                echo -n "Or quit"
++                read SOURCE_DIR
++        fi
++done
++
++echo
++echo "Bye"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters11/2.sh b/capters11/2.sh
+new file mode 100755
+index 0000000..756f2b0
+--- /dev/null
++++ b/capters11/2.sh
+@@ -0,0 +1,55 @@
++#!/usr/bin/env bash
++
++#使用命令替换,把find查找的结果作为rm的参数传入
++#rm -rf `find . -name \*.o -print`
++
++#但是,一旦查找到的文件太多,超过了命令参数个数的限制,操作就会失败,可以使用xargs解决
++
++echo
++echo "enter a directory which you want find"
++echo -n " Type 'quit' to exit "
++echo
++
++#询问用户输入查找目录
++read SOURCE_DIR
++
++while [ "$SOURCE_DIR" != "quit" ]
++do
++        if [ -d "$SOURCE_DIR" ]
++        then
++                echo
++                echo "Finding all *.o files in '$SOURCE_DIR'..."
++                echo
++                echo "Directory '$SOURCE_DIR' contains the following '*'.o files"
++                echo
++
++                #打印出所有*。o文件
++                find "$SOURCE_DIR" -name \*.o -print
++
++                #可以使用单引号或者双银行引用*以及;,防止shell处理,记录在file.list
++#                find "$SOURCE_DIR" -name \*.o -print -exec rm '{}' ';'>delfile.list
++                find "$SOURCE_DIR" -name \*.o -print|tee delfile.list|xargs rm -rf
++                #command|xargs command2 把command1的标准输出作为xargs的标准输入,而当作命令行参数执行command2
++
++                echo
++                echo "All *.o files have been removed"
++                echo
++
++                echo "Clean up another directory shich contains .o files"
++                echo -n "Enter another dir or quit"
++
++                read SOURCE_DIR
++
++        else
++                echo
++                echo "'$SOURCE_DIR' is not a dir,input dir again"
++                echo -n "Or quit"
++                read SOURCE_DIR
++        fi
++done
++
++echo
++echo "Bye"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters11/3.sh b/capters11/3.sh
+new file mode 100755
+index 0000000..9b3a80f
+--- /dev/null
++++ b/capters11/3.sh
+@@ -0,0 +1,12 @@
++#!/usr/bin/env bash
++#其它查找方式
++#locate
++#查找文件名中包含whereis的文件
++locate whereis
++
++
++#不搜索中间路径,只匹配文件名 -b = --basename 过滤中间路径
++locate -b whereis
++
++#精确匹配文件名 \ 阻止了locate用*whereis*的格式查找
++locate -b '\whereis'
+diff --git a/capters11/4.sh b/capters11/4.sh
+new file mode 100755
+index 0000000..23d6376
+--- /dev/null
++++ b/capters11/4.sh
+@@ -0,0 +1,46 @@
++#!/usr/bin/env bash
++#file不仅可以显示出文件的几种大的分类,还可以分析普通文件中的数据格式,输出详细信息
++
++ #显示内核文件信息
++echo
++
++echo "Kernel file:"
++echo -n " "
++file /boot/vmlinuz-`uname -r`
++
++#二进制程序 /bin/ls
++echo
++echo "Binary program 'ls':"
++echo -n " "
++file /bin/ls
++
++#主目录
++echo
++echo "Home dir :"
++echo -n " "
++file ~
++
++
++#符号连接文件
++echo
++echo "sybolic link file:"
++echo -n " "
++file /usr/bin/locate
++
++
++#压缩的数据
++echo
++echo "gzip compressed data:"
++echo -n " "
++file /usr/bin/locate
++
++
++#shell脚本
++echo
++echo "shell  script"
++echo -n " "
++file ./3.sh
++
++echo
++
++exit 0
+diff --git a/capters11/5.sh b/capters11/5.sh
+new file mode 100755
+index 0000000..ef2a525
+--- /dev/null
++++ b/capters11/5.sh
+@@ -0,0 +1,38 @@
++#!/usr/bin/env bash
++
++#文件备份
++#把一个分区复制到一个文件中
++#sudo dd if=/dev/tty of=tty_partution.img
++sudo dd if=~/www/shell/capters1 of=tty_partition.img
++
++[sudo] password for nj:
++
++#恢复分区
++#sudo dd if=tty_partution.img of=if=/dev/tty
++sudo dd if=tty_partition.img of=~/www/shell/capters1
++
++#把一个硬盘复制到另一个相同大小的硬盘中
++sudo dd if=/dev/sda of=/dev/sdb
++
++#把整个硬盘备份到一个文件中
++sudo dd if=/dev/sdb of=disk.img
++
++#恢复整个硬盘
++sudo dd if=/dev/disk.img of=sdb
++
++#备份整个硬盘并压缩数据
++sudo dd if=/dev/sdb | bzip2>~/disk_image.bz2
++
++#把压缩数据恢复到硬盘
++bunzip2 -c ~/disk_image.bz2|sudo dd of=/dev/sdb
++
++#备份硬盘住引导纪录
++sudo dd if=/dev/sda of=~/mbr.img count=1 bs=512
++
++#备份光盘镜像
++sudo dd if=/dev/cdrom of=cdrom.iso
++
++#使用随机数据破坏硬盘数据
++sudo dd if=/dev/urandom of=/dev/sda1
++
++
+diff --git a/capters11/6-2.sh b/capters11/6-2.sh
+new file mode 100755
+index 0000000..a43ce7c
+--- /dev/null
++++ b/capters11/6-2.sh
+@@ -0,0 +1,39 @@
++#!/usr/bin/env bash
++
++#解压文件
++#每个压缩工具都会有解压工具,如zip中的unzip  xz-utils中的unzx,bzip中的bunzip
++#以bunzip为例
++
++if [ -f ./data.file.bz2 ]
++then
++        #list the size of the file
++        echo
++        echo "this is our compressed data file:"
++        #查看压缩后的体积大小
++        echo " `ls -l data.file.bz2`"
++        echo
++
++        #解压缩文件data.file.bz2 可以得到文件data.file
++        echo
++        echo "Now uncompress the file 'data.file.bz2' back to 'data.file'"
++        bunzip2 data.file.bz2
++
++        echo
++        echo "After uncompressing,file data.file.bz2 back to data.file..."
++        echo
++
++        echo "This is the origin data file:"
++
++        # 检查data.file的类型和大小
++        echo "`file data.file`"
++        echo "`ls -l data.file`"
++        echo "The size of 'data.file' equals to the original file size"
++else
++        echo
++        echo "There is no compressed file named 'data.file.bz2' in current dir"
++        echo "Please run bzip.sh first,then run this script"
++fi
++
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters11/6.sh b/capters11/6.sh
+new file mode 100755
+index 0000000..bf4db50
+--- /dev/null
++++ b/capters11/6.sh
+@@ -0,0 +1,31 @@
++#!/usr/bin/env bash
++
++#压缩文件
++#在当前目录下创建一个数据文件
++#dd bs=1024 count=1024 if=/dev/zero of=data.file 2>/dev/null
++dd bs=1024 count=1024 if=~/www/shell/testzip of=data.file 2>/dev/null
++
++if [ $? -eq 0 ]
++then
++        #list the size of the file
++        echo
++        echo "this is our data file:"
++        echo " `ls -l data.file`"
++fi
++
++echo
++echo "now dompressing the data.file..."
++bzip2 -v data.file  ##-v显示文件的详细信息,在压缩的过程中,会删除原文件,可以使用--k来保持原文件不被删除
++
++if [ $? -eq 0 ]
++then
++        echo
++        echo "Done"
++        echo
++
++        #查看压缩后的体积大小
++        echo "Our data file has been renameed to 'data.file.bz2'"
++        echo " `file data.file.bz2`"
++        echo " `ls -l data.file.bz2`"
++fi
++exit 0
+\ No newline at end of file
+diff --git a/capters11/7-2.sh b/capters11/7-2.sh
+new file mode 100755
+index 0000000..895c766
+--- /dev/null
++++ b/capters11/7-2.sh
+@@ -0,0 +1,7 @@
++#!/usr/bin/env bash
++
++#打包的同时压缩文件
++ls -l #查看文件
++tar czvf all.tar.gz *  #使用tar工具创建gzip的tar包文件
++ls -l all.tar.gz  #检查被压缩的tar包文件
++file all.tar.gz #查看文件信息
+\ No newline at end of file
+diff --git a/capters11/7.sh b/capters11/7.sh
+new file mode 100755
+index 0000000..3f9e7e7
+--- /dev/null
++++ b/capters11/7.sh
+@@ -0,0 +1,9 @@
++#!/usr/bin/env bash
++
++#文件备份
++#使用tar命令打包,然后在使用压缩
++
++ls -l #显示当前文件夹下的文件
++tar -cvf all.tar * #把这些文件全部打包到一个文件夹
++ls -l all.tar #显示打包的tar包文件
++tar -tvf all.tar #显示tar包中的文件列表
+diff --git a/capters11/8.sh b/capters11/8.sh
+new file mode 100755
+index 0000000..b93aaa1
+--- /dev/null
++++ b/capters11/8.sh
+@@ -0,0 +1,56 @@
++#!/usr/bin/env bash
++
++#下载工具
++#Linux的wget和curl工具都可以通过网络下载文件
++
++DOWNLOAD_FILE=make.tar.gz
++
++#从文件名中去除后缀 .tar.gz
++SOURCE_DIR=`basename $DOWNLOAD_FILE.tar.gz`
++
++echo
++
++#从gnu ftp服务器上下载make工具的源代码压缩包
++if [ ! -f $DOWNLOAD_FILE ]
++then
++       echo "Begining to download.."
++       echo
++       #使用wget下载ftp上的文件
++       wget ftp:gnu.org/pub/gnu/make/make-3.8.1.tar.gz
++
++       #curl的使用和wget类似,不过会把下载的文件数据打印到终端屏幕砂锅,如果想要在硬盘上保存文件,需要使用标准输出重定向把
++       #把下载的文件重定向到一个文件中
++       #curl ftp:gnu.org/pub/gnu/make/make-3.8.1.tar.gz > make-3.8.1.tar.gz
++
++
++       if [ $? -eq 0 ]
++       then
++               echo "Done,down successed"
++               echo
++               echo "before uncompress,it size is :"
++               echo "`du -h $DOWNLOAD_FILE`"
++               echo "Uncompress the source code.."
++               #使用tar解包,不显示解压过程的输出
++               tar -xzvf $DOWNLOAD_FILE > /dev/null
++
++               if [ $? -eq 0 ]
++               then
++                       echo "Done , success"
++                       echo
++                       echo "After uncompress,size:"
++                       echo "`du -h $SOURCE_DIR`"
++               else
++                       echo "Uncompress operationfailed!"
++                       exit 1
++               fi
++       else
++               echo "Wget can not operation failed"
++               exit 1
++       fi
++else
++       echo "$DOWNLOAD_FILE exists in current directory,abort!"
++fi
++
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters11/9.txt b/capters11/9.txt
+new file mode 100755
+index 0000000..96c2a01
+--- /dev/null
++++ b/capters11/9.txt
+@@ -0,0 +1,12 @@
++#总结
++
++(1) 如何根据文件名,所有者,访问权限等查找文件
++(2) 找到满足条件的文件以后,如何对其进行一连串的操作
++(3) 如何使用locate命令快速搜索文件系统中的文件
++(4) 如何搜索一个可执行的命令或者man手册页
++(5) 如何压缩和解压文件
++(6) 使用tar命令备份文件和目录
++(7) 在命令行下下载文件
++(8) 查看文件类型的方法
++(9) 在Linux系统中将文本文件转为win
++(10)使用dd工具操作文件内容
+diff --git a/capters11/all.tar b/capters11/all.tar
+new file mode 100755
+index 0000000000000000000000000000000000000000..cb1e94aff47e56274ec54e2c480106d6f1207d69
+GIT binary patch
+literal 1068544
+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
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C7
+z2oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N
+z0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+
+z009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBly
+zK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF
+z5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk
+z1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs
+z0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZ
+zfB*pk1PBlyK!5-N0t5&UAV7cs0RjXF5FkK+009C72oNAZfB*pk1PBlyK!5-N0t5&U
+zAV7cs0RjXF5FkK+009C72oNAZ;2{Ximgnax^X1|BN~8G@lFySI9UYyTm`ENAuhUbL
+z`RnL-{2UHt|E80%@#*QY;`sFFR52MHD~=VX9!o|aR)KocU2HT<^-#3xPkWDUe;-bp
+zo7;Z4dnDdSyt&cQq<j2p{$_Y&WNf%r_?nke@g9~yqp|;CCEZOoRE@8w|D)~tUo1|K
+WO@#VCR-91(yMEpfAVA<@2>cHTO%`zg
+
+literal 0
+HcmV?d00001
+
+diff --git a/capters11/all.tar.gz b/capters11/all.tar.gz
+new file mode 100755
+index 0000000000000000000000000000000000000000..6f1ad666adcf452c74d5c440ffd8ef9273828e63
+GIT binary patch
+literal 6307
+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
+Xh5silQn(Hv0VQMzYPZ7k0}B5G?J{o{
+
+literal 0
+HcmV?d00001
+
+diff --git a/capters11/data.file b/capters11/data.file
+new file mode 100755
+index 0000000000000000000000000000000000000000..9e0f96a2a253b173cb45b41868209a5d043e1437
+GIT binary patch
+literal 1048576
+zcmeIuF#!Mo0K%a4Pi+Wah(KY$fB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+z0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VK
+zfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5
+zV8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM
+z7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*
+z1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd
+z0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwA
+zz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEj
+zFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r
+z3>YwAz<>b*1`HT5V8DO@0|pEjFkrxd0RsjM7%*VKfB^#r3>YwAz<>b*1`HT5V8DO@
+T0|pEjFkrxd0RsjM82APT0Pp|-
+
+literal 0
+HcmV?d00001
+
+diff --git a/capters11/delfile.list b/capters11/delfile.list
+new file mode 100755
+index 0000000..1faa341
+--- /dev/null
++++ b/capters11/delfile.list
+@@ -0,0 +1 @@
++.//1.o
+diff --git a/capters11/ssh b/capters11/ssh
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters12/1-2.sh b/capters12/1-2.sh
+new file mode 100755
+index 0000000..c1beefe
+--- /dev/null
++++ b/capters12/1-2.sh
+@@ -0,0 +1,38 @@
++#!/usr/bin/env bash
++
++#处理信号
++#让运行的脚本在用户终止时也能正常的清除临时文件
++
++#接收信号时不清理临时文件的脚本
++#使用当前脚本运行的进程PID创建一个唯一的文件
++TMPFILE=tmpfile.$$
++
++
++#创建临时文件
++echo
++echo "Creating temporaryfile $TMPFILE..."
++echo `date`>$TMPFILE
++
++echo
++#模拟一些工作
++echo "Script is running..."
++echo -n " "
++
++#打印进度条
++TIME=15
++until [ "$TIME" -eq 0 ]
++do
++        echo -n "###"
++        #每打印一次#就sleep 1s
++        sleep 1
++        #让TIME的值减1,最终等于0的时候结束
++        let TIME-=1
++done
++
++#只有脚本执行到这里时,才会清楚临时文件
++echo
++echo "Cleaning up temp file $TMPFILE"
++rm -rf $TMPFILE 2>/dev/null
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters12/1.sh b/capters12/1.sh
+new file mode 100755
+index 0000000..f0fe2f6
+--- /dev/null
++++ b/capters12/1.sh
+@@ -0,0 +1,12 @@
++#!/usr/bin/env bash
++
++#在第一个终端执行xclock
++
++#在另一个终端查找xclock的PID
++ps -fC xclock
++
++#发送一个信号到xclock的进程
++kill -s HUP 5783 #(PID的值)
++
++#在运行xclock的第一个终端查看
++xclock
+\ No newline at end of file
+diff --git a/capters12/2-2.sh b/capters12/2-2.sh
+new file mode 100755
+index 0000000..f5bc1e4
+--- /dev/null
++++ b/capters12/2-2.sh
+@@ -0,0 +1,69 @@
++#!/usr/bin/env bash
++
++#接收信号时清理临时文件的脚本
++#使用当前脚本的运行进程PID创建一个唯一的文件
++#单独指定某一个进程的处理函数
++TEMPFILE=tmpfile.$$
++
++init(){
++        echo
++        echo "Receive signup,init"
++        echo "delete temp file ,create a new one"
++        rm -rf $TEMPFILE 2>/dev/null
++        echo 'date'>$TEMPFILE
++        echo "Done"
++        echo -n " "
++        TIME=15
++}
++
++#定义接收到信号时的回调函数
++cleanUp(){
++        if [ -f "$TEMPFILE" ]
++        then
++               echo
++               echo "Clean up..."
++
++               #清除脚本产生的临时文件
++               rm -rf $TEMPFILE 2>/dev/null
++               echo "Done"
++               echo
++        fi
++
++        #结束脚本的执行
++        exit 2
++}
++
++#注册信号回调函数cleanUp
++trap cleanUp  2 3 15
++
++#为信号1注册回调函数init
++trap cleanUp  1
++
++#创建临时文件
++echo
++echo "Creating temporaryfile $TMPFILE..."
++echo `date`>$TMPFILE
++
++echo
++#模拟一些工作
++echo "Script is running..."
++echo -n " "
++
++#打印进度条
++TIME=15
++until [ "$TIME" -eq 0 ]
++do
++        echo -n "###"
++        #每打印一次#就sleep 1s
++        sleep 1
++        #让TIME的值减1,最终等于0的时候结束
++        let TIME-=1
++done
++
++#只有脚本执行到这里时,会清楚临时文件
++echo
++echo "Cleaning up temp file $TMPFILE"
++rm -rf $TMPFILE 2>/dev/null
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters12/2.sh b/capters12/2.sh
+new file mode 100755
+index 0000000..783bf6f
+--- /dev/null
++++ b/capters12/2.sh
+@@ -0,0 +1,54 @@
++#!/usr/bin/env bash
++
++#接收信号时清理临时文件的脚本
++#使用当前脚本的运行进程PID创建一个唯一的文件
++TEMPFILE=tmpfile.$$
++
++#定义接收到信号时的回调函数
++cleanUp(){
++        if [ -f "$TEMPFILE" ]
++        then
++               echo
++               echo "Clean up..."
++
++               #清除脚本产生的临时文件
++               rm -rf $TEMPFILE 2>/dev/null
++               echo "Done"
++               echo
++        fi
++
++        #结束脚本的执行
++        exit 2
++}
++
++#注册信号回调函数cleanUp
++trap cleanUp 1 2 3 15
++
++#创建临时文件
++echo
++echo "Creating temporaryfile $TMPFILE..."
++echo 'date'> $TMPFILE
++
++echo
++#模拟一些工作
++echo "Script is running..."
++echo -n " "
++
++#打印进度条
++TIME=15
++until [ "$TIME" -eq 0 ]
++do
++        echo -n "###"
++        #每打印一次#就sleep 1s
++        sleep 1
++        #让TIME的值减1,最终等于0的时候结束
++        let TIME-=1
++done
++
++#只有脚本执行到这里时,会清楚临时文件
++echo
++echo "Cleaning up temp file $TMPFILE"
++rm -rf $TMPFILE 2>/dev/null
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters12/3-1.sh b/capters12/3-1.sh
+new file mode 100755
+index 0000000..7670421
+--- /dev/null
++++ b/capters12/3-1.sh
+@@ -0,0 +1,41 @@
++#!/usr/bin/env bash
++
++#忽略信号,屏蔽信号输入,不希望操作被用户阻断
++#使用空字符串或冒号屏蔽信号2  signint
++#在非关键操作时恢复允许用户中断
++# trap ''  2
++#trap : 2
++trap '' INT  ##当前操作不会被用户中断
++
++echo
++echo "Doing somthing"
++
++#睡眠10s模拟操作
++echo -n " "
++COUNT=5
++while [ $COUNT -gt 0 ]
++do
++        #打印进度条
++        echo -n "##"
++        sleep 1
++        let COUNT-=1
++done
++
++echo  "Import thing done..."
++
++#重新接收用户中断,恢复SIGNINT的默认中断回调
++trap 2   ##不知道这里为什么使用中断名称INT不可以
++echo "Press CTRL+C"
++
++echo -n " "
++COUNT=5
++while [ $COUNT -gt 0 ]
++do
++        #打印进度条
++        echo -n "##"
++        sleep 1
++        let COUNT-=1
++done
++
++echo "Done"
++exit 0
+\ No newline at end of file
+diff --git a/capters12/3.sh b/capters12/3.sh
+new file mode 100755
+index 0000000..2183162
+--- /dev/null
++++ b/capters12/3.sh
+@@ -0,0 +1,24 @@
++#!/usr/bin/env bash
++
++#忽略信号,屏蔽信号输入,不希望操作被用户阻断
++#使用空字符串或冒号屏蔽信号2  signint
++# trap ''  2
++#trap : 2
++trap '' INT  ##当前操作不会被用户中断
++
++echo
++echo "Doing somthing"
++
++#睡眠10s模拟操作
++echo -n " "
++COUNT=10
++while [ $COUNT -gt 0 ]
++do
++        #打印进度条
++        echo -n "##"
++        sleep 1
++        let COUNT-=1
++done
++
++echo "Done"
++exit 0
+\ No newline at end of file
+diff --git a/capters12/4.sh b/capters12/4.sh
+new file mode 100755
+index 0000000..d7e7262
+--- /dev/null
++++ b/capters12/4.sh
+@@ -0,0 +1,62 @@
++#!/usr/bin/env bash
++
++#定时器,指定时间内没有合法输入,发送中断信号
++#定义函数Expire_Handler扑火SIGNNAL信号
++
++Expire_Handler(){
++        echo
++        echo "Got SIGNALARM signal,Waitting for Your info too long!"
++        echo "Bye"
++
++        #从脚本中以代码14推出,用来表示接收到了SIGNAKLARM信号
++        exit 14
++}
++
++#定义函数,用来设置定时器
++Start_Timer(){
++        #如果没有指定参数,默认10s
++        local INTERVAL=${1:-10}
++
++        #检查参数大于0
++        if [ $INTERVAL -gt 0 ]
++        then
++                #15s以后,发送信号SIGALRM到脚本进程
++                sleep $INTERVAL && kill -s 14 $$ &
++
++                #记住后台进程的PID,用来杀死定时器
++                #如果用户在最后期限以前输入信息
++                TIMERPID=$!
++        else
++                echo "Error:interval must be positive integer"
++                exit 1
++        fi
++}
++
++#定义函数,用来杀死后台进程,从而去除定时器
++Unset_Timer(){
++        #首先杀死子进程
++        kill `pgrep -P $TIMERPID`
++
++        #然后杀死父进程
++        kill $TIMERPID
++}
++
++#设置定时器回调函数Expire——Handler来捕捉SIGNALARM信号
++trap Expire_Handler 14
++
++echo
++echo "You have only 10s to enter your info"
++echo
++
++#把定时器的时间设置为10s
++Start_Timer 3
++read -p "Please enter your ID:" id
++
++#如果用户在最后期限以前输入了信息,移除定时器
++Unset_Timer
++
++echo
++echo "Your ID is:$id"
++echo "Done"
++
++exit 0
+\ No newline at end of file
+diff --git a/capters12/5.txt b/capters12/5.txt
+new file mode 100755
+index 0000000..5ac2f6a
+--- /dev/null
++++ b/capters12/5.txt
+@@ -0,0 +1,9 @@
++#总结
++
++(1) 信号的两只表达方式,包括信号和名字
++(2) 如何查看所有信号和对应的名字
++(3) 发送信号的方法
++(4) 如何定义信号处理函数
++(5) 进程在收到一个信号的时候的三种处理信号的方式
++(6) 忽略信号和重置信号处理
++(7) 信号的一些常见应用,如删除临时文件和设置定时器
+diff --git a/capters12/tmpfile.71310 b/capters12/tmpfile.71310
+new file mode 100755
+index 0000000..beba895
+--- /dev/null
++++ b/capters12/tmpfile.71310
+@@ -0,0 +1 @@
++Mon Sep 26 12:17:33 PDT 2016
+diff --git a/capters13/1-2.sh b/capters13/1-2.sh
+new file mode 100755
+index 0000000..ee45afb
+--- /dev/null
++++ b/capters13/1-2.sh
+@@ -0,0 +1,21 @@
++#!/usr/bin/env bash
++
++#处理命令行的每一个文件,可以使用通配符
++#echo "$@"
++#exit 0
++for file in "$@"
++do
++        echo "**processing file **"
++
++        #使用;连接多个编辑命令,把邮箱替换的同时,把2替换成3
++        sed 's/test@qq.com/nj@qq.com/g;s/2/3/g' "$file">"$file.$$"
++
++        if [ -f $file.$$ ]
++        then
++               #覆盖原始文件
++               mv -f "$file.$$" "$file"
++        fi
++done
++
++echo "All done."
++exit 0
+\ No newline at end of file
+diff --git a/capters13/1-3.sh b/capters13/1-3.sh
+new file mode 100755
+index 0000000..d1fb03c
+--- /dev/null
++++ b/capters13/1-3.sh
+@@ -0,0 +1,23 @@
++#!/usr/bin/env bash
++
++#处理命令行的每一个文件,可以使用通配符
++#echo "$@"
++#exit 0
++for file in "$@"
++do
++        echo "**processing file **"
++
++        #使用-e选项指定多个编辑命令,把邮箱替换的同时,把2替换成3
++        sed -e 's/test@qq.com/nj@qq.com/gp;' -e 's/2/3/g' "$file">"$file.$$"
++        #sed -e 's/test@qq.com/nj@qq.com/gip;' -e 's/2/3/g' "$file">"$file.$$"
++        #-i选项指定忽略大小写
++
++        if [ -f $file.$$ ]
++        then
++               #覆盖原始文件
++               mv -f "$file.$$" "$file"
++        fi
++done
++
++echo "All done."
++exit 0
+\ No newline at end of file
+diff --git a/capters13/1-4.sh b/capters13/1-4.sh
+new file mode 100755
+index 0000000..049e4b1
+--- /dev/null
++++ b/capters13/1-4.sh
+@@ -0,0 +1,21 @@
++#!/usr/bin/env bash
++
++#处理命令行的每一个文件,可以使用通配符
++#echo "$@"
++#exit 0
++for file in "$@"
++do
++        echo "**processing file **"
++
++        #使用-f选项指定包含多个编辑命令的文件
++        sed -f a.txt "$file">"$file.$$"
++
++        if [ -f $file.$$ ]
++        then
++               #覆盖原始文件
++               mv -f "$file.$$" "$file"
++        fi
++done
++
++echo "All done."
++exit 0
+\ No newline at end of file
+diff --git a/capters13/1-5.sh b/capters13/1-5.sh
+new file mode 100755
+index 0000000..8b576c0
+--- /dev/null
++++ b/capters13/1-5.sh
+@@ -0,0 +1,7 @@
++#!/usr/bin/env bash
++
++#替换test。txt中的/test为 /nj/test,使用\转义
++cat ~/www/shell/capters13/test.txt |sed -n 's/\/test/\/nj\/test/p'
++
++#使用其它的分隔符
++cat test.txt |sed  -n  's:/test:/nj/test:p'
+\ No newline at end of file
+diff --git a/capters13/1.sh b/capters13/1.sh
+new file mode 100755
+index 0000000..3a2b9e6
+--- /dev/null
++++ b/capters13/1.sh
+@@ -0,0 +1,26 @@
++#!/usr/bin/env bash
++
++#sed命令
++#使用sed的替换命令S可以把所以的html文件中str1替换为str2
++
++#处理命令行的每一个文件,可以使用通配符
++#echo "$@"
++#exit 0
++for file in "$@"
++do
++        echo "**processing file **"
++
++        #保存结果到临时文件中
++        sed 's/test/nj/g' "$file">"$file.$$"
++
++        if [ -f $file.$$ ]
++        then
++               #覆盖原始文件
++               mv -f "$file.$$" "$file"
++        fi
++done
++
++echo "All done."
++exit 0
++
++
+diff --git a/capters13/2.sh b/capters13/2.sh
+new file mode 100755
+index 0000000..80d23f9
+--- /dev/null
++++ b/capters13/2.sh
+@@ -0,0 +1,46 @@
++#!/usr/bin/env bash
++
++# 选择要操作的行 nd 删除第n行
++cat -n test.txt | sed '6d'|more
++echo
++
++#删除第m 到 n行,对sed来说,会把2,4扩展为2 3 4
++# n,+m会扩展为n到n+m 2,+3  会变成2 3 4
++cat -n test.txt | sed '2,4d'|more
++echo
++
++#删除不希望显示的行
++cat -n test.txt|sed '2,4d'
++echo
++echo
++
++#使用!取反
++cat -n test.txt|sed '2,4!d'
++echo
++
++#使用~表示跳转 2表示起始地址 3表示每隔3行提取1行
++#cat -n test.txt|sed -n '2~3p'
++echo
++
++#除了n,m行
++cat -n test.txt|sed -n '1,2p;4,6p'
++
++#删除文件中所有的注释行
++#cat 1.sh | sed '/^#/d'
++
++#删除空行和注释行
++cat 2.sh | sed '/^#/d' -e '/^$/d'
++
++#显示出所有匹配到的行
++cat 2.sh | sed '/^#/p' -e '/^$/p'
++
++#提取出所有以数字结尾的行
++cat test.txt|sed -n '/[0-9]$/p'
++
++
++echo
++#cat -n test.txt |sed  -n '3,+3p'
++
++echo
++#匹配从nj/test@qq.com这一行到test@3.com这一行
++cat test.txt | sed -n '/^nj\/test@qq.com/','/^test@3.com/p'
+diff --git a/capters13/3.sh b/capters13/3.sh
+new file mode 100755
+index 0000000..50d3e95
+--- /dev/null
++++ b/capters13/3.sh
+@@ -0,0 +1,11 @@
++#!/usr/bin/env bash
++
++#重用匹配到的字符串
++#把空行替换为----
++cat test.txt |sed 's/^$/----/'  ## ^$ 匹配空白行
++echo
++
++#在所有非注释行前添加#
++ cat test.txt|sed -n 's/^[^#]*$/#&/p'  # 使用&代表正则表达式匹配到的结果
++#sed常和-n一起使用,sed默认打印两次模式中的数据
++#-n可以阻止这个默认行为,使用p明确要求输出才会显示
+\ No newline at end of file
+diff --git a/capters13/4.txt b/capters13/4.txt
+new file mode 100755
+index 0000000..b1c2537
+--- /dev/null
++++ b/capters13/4.txt
+@@ -0,0 +1,9 @@
++#总结
++
++(1) sed命令的工作原理
++(2) 如何避免sed命令默认打印模式缓存
++(3) 什么是正则表达式
++(4) 利用正则替换
++(5) 使用sed替换
++(6) 选择操作行
++(7) 替换查找结果字符串
+diff --git a/capters13/a.txt b/capters13/a.txt
+new file mode 100755
+index 0000000..b5fd6d2
+--- /dev/null
++++ b/capters13/a.txt
+@@ -0,0 +1,2 @@
++s/test@qq.com/nj@qq.com/g
++s/2/3/g
+diff --git a/capters13/test.txt b/capters13/test.txt
+new file mode 100755
+index 0000000..ee1c79b
+--- /dev/null
++++ b/capters13/test.txt
+@@ -0,0 +1,8 @@
++nj@qq.com
++nj/test@qq.com
++nj@qq.com
++
++
++test@3.com
++tty
++shshs1
+diff --git a/capters14/1-2.sh b/capters14/1-2.sh
+new file mode 100755
+index 0000000..bee6348
+--- /dev/null
++++ b/capters14/1-2.sh
+@@ -0,0 +1,24 @@
++#!/usr/bin/env bash
++
++#通过f选项指定运行的awk程序
++#awk -F:  -f user.txt test.txt
++
++
++#查找UID大于240的用户
++#awk中使用要操作的行 express {action;} < > <= !=  val ~/pattern/
++#awk -F: '$3>240 {printf "User:%-15sUID:%s\n",$1,$3}' /etc/passwd
++
++#查找所有使用bash和C shell的用户
++awk -F: '($7=="/bin/bash")||($7=="/bin/csh"){printf "User:%-15sUID:%-20sShell:%s\n",$1,$3,$7;}' /etc/passwd
++
++
++#使用||把两个规则合并
++awk -F: '($3>250)||($7=="/bin/csh"){printf "User:%-15sUID:%-20sShell:%s\n",$1,$3,$7;}' /etc/passwd
++
++#使用next实现,如果第一条规则成功匹配,就执行next跳过第二条规则
++#如果删除next,会有一部分用户被重复打印
++awk -F: '($7=="/bin/bash"){print $1;next;}
++         ($3>=250){printf $1,$3,$7;}
++'/etc/passwd
++
++
+diff --git a/capters14/1-3.sh b/capters14/1-3.sh
+new file mode 100755
+index 0000000..722b599
+--- /dev/null
++++ b/capters14/1-3.sh
+@@ -0,0 +1,4 @@
++#!/usr/bin/env bash
++
++awk -F: '{printf "|%18s|\n",$1;}' /etc/passwd  #占用18个字节的宽度,不够空格补气
++awk -F: '{printf "|%-18s|\n",$1;}' /etc/passwd  #占用18个字节的宽度,左对齐
+\ No newline at end of file
+diff --git a/capters14/1-4.sh b/capters14/1-4.sh
+new file mode 100755
+index 0000000..20d602b
+--- /dev/null
++++ b/capters14/1-4.sh
+@@ -0,0 +1,2 @@
++#!/usr/bin/env bash
++
+diff --git a/capters14/1.sh b/capters14/1.sh
+new file mode 100755
+index 0000000..aa4f3ca
+--- /dev/null
++++ b/capters14/1.sh
+@@ -0,0 +1,4 @@
++#!/usr/bin/env bash
++
++#提取出passwd文件中某一行的3个字段
++awk -F:'/^root:/ {print $1,$3,$6;}' /etc/passwd
+diff --git a/capters14/2-2.sh b/capters14/2-2.sh
+new file mode 100755
+index 0000000..62fb112
+--- /dev/null
++++ b/capters14/2-2.sh
+@@ -0,0 +1,45 @@
++#!/usr/bin/env bash
++
++#写一个脚本 统计文件中的总行数,空白行数以及注释行的函数
++
++#方案1,定义3个变量,分别统计,至少需要一个参数
++
++if [ "$#" -eq 0 ]
++then
++        echo "Usage:"
++        echo -e "\t`basename $0` [FILE]..."
++        exit 1
++fi
++
++#处理每一个命令行参数
++for FILE in "$@"
++do
++        #只有当文件是一个可读文件,且是一个包含数据的可读文件时,才能被脚本处理
++        if [ -f "$FILE" ] && [ -r "$FILE" ] && [ -s "$FILE" ]
++        then
++                echo "$FILE:"
++                awk '
++                #统计所有行数
++                /.*/{total_lines +=1;}
++                #{total_lines +=1;}
++
++                #统计所有的空行
++                /^*$/{empty_lines +=1; next;}
++
++                #统计所有的注释行数
++                /^*#$/{comment_lines +=1;}
++
++                #在主循环结束以后输出结果
++                END{
++                        printf "\tTotal Lines:%s\t\t",total_lines;
++                        printf "\tEmpty Lines:%s\t\t",empty_lines;
++                        printf "\tcomment lines:%s\t\t",comment_lines;
++                }
++                ' "$FILE"  #这里和前边要有一个空格
++        else
++                echo "$FILE can not be handle"
++        fi
++done
++
++echo "Done"
++exit 0
+\ No newline at end of file
+diff --git a/capters14/2-3.sh b/capters14/2-3.sh
+new file mode 100755
+index 0000000..9c457e6
+--- /dev/null
++++ b/capters14/2-3.sh
+@@ -0,0 +1,15 @@
++#!/usr/bin/env bash
++
++#打印所有的偶数行
++
++awk '
++BEGIN{
++      #在主循环开始以前指定分隔符为冒号
++      FS=":";
++}
++
++#通过表达式匹配所有的偶数行
++NR%2 == 0{  #内建变量NR的值为1 每次读取一行,NR自动加1
++        print NR,$0;
++}
++' /etc/passwd
+\ No newline at end of file
+diff --git a/capters14/2-4.sh b/capters14/2-4.sh
+new file mode 100755
+index 0000000..04810d0
+--- /dev/null
++++ b/capters14/2-4.sh
+@@ -0,0 +1,33 @@
++#!/usr/bin/env bash
++
++#把记录之间的空行分隔改为空格
++#echo $1
++#read -p "File:" FILE
++awk '
++BEGIN {
++        #设置分隔符为换行
++        FS="\n";
++
++        #设置输入记录分隔符为空字符串
++        RS="";
++
++        #设置字段输出分隔符为换行
++        OFS="\n";
++
++        #设置记录输出分隔符为换行
++        ORS="\n\n";
++
++        #打印标题
++        print "The develops of Linux kernel:"
++        print "(N)name , (E)email"
++        print "-------------"
++}
++
++#使用正则表达式^N过滤所有无关结果
++#只对以字母N起始的记录块处理
++/^N/ {
++print $1,$2;
++}
++' $1
++
++exit 0
+diff --git a/capters14/2-5.sh b/capters14/2-5.sh
+new file mode 100755
+index 0000000..1dd5299
+--- /dev/null
++++ b/capters14/2-5.sh
+@@ -0,0 +1,3 @@
++#!/usr/bin/env bash
++
++#awk可以把上次的输出作为下次的输入
+diff --git a/capters14/2-6.sh b/capters14/2-6.sh
+new file mode 100755
+index 0000000..ef90f66
+--- /dev/null
++++ b/capters14/2-6.sh
+@@ -0,0 +1,30 @@
++#!/usr/bin/env bash
++
++#查询文件系统中任意用户的主目录UID,GID所有shell等信息
++
++echo
++echo "This script will find user's home directory"
++read -p "Enter username:"
++
++
++until [ "$REPLY" = "quit" ] || [ "$REPLY" = "Quit" ] || [ "$REPLY" = "q" ]
++do
++        echo
++        awk '
++                BEGIN{
++                      #修改分隔符为:
++                      FS=":";
++                }
++
++                #当地一个字段本awk变量USERNAME相同时,打印目录
++                $1 == USERNAME{
++                #打印目录
++                printf "USER:%-8s UID:%-5s GID:%-5s HOME Dir:%-15s Shell:%-8s\n",$1,$3,$4,$6,$7;
++                }
++
++                #定义awk变量USERNAME
++        'USERNAME="$REPLY" /etc/passwd  #username的等号两边不能有空格
++done
++
++echo "Bye"
++exit 0
+\ No newline at end of file
+diff --git a/capters14/2-7.sh b/capters14/2-7.sh
+new file mode 100755
+index 0000000..fb7e4cf
+--- /dev/null
++++ b/capters14/2-7.sh
+@@ -0,0 +1,3 @@
++#!/usr/bin/env bash
++
++awk -F: '{printf "%-18d\n",$1,length($1)}'/etc/passwd
+\ No newline at end of file
+diff --git a/capters14/2.sh b/capters14/2.sh
+new file mode 100755
+index 0000000..e8d74e8
+--- /dev/null
++++ b/capters14/2.sh
+@@ -0,0 +1,17 @@
++#!/usr/bin/env bash
++
++#统计当前目录下2016-9-26hao修改的所有文件大小,并且计算这些文件大小的总和
++ls -l | awk '  #awk和{之间要有空格
++#过滤其它特殊文件和目录,只对普通文件的行数据进行操作
++($1 ~/^-/)&&($5>="500"){  # ~要和后边的pattern连在一起
++        printf "Filename:%-15s AAA:%-12s Size:%s\n",$8,$6,$5;
++        sum +=$5;
++}
++
++#在主循环结束以后,输出结果
++END{  #END和括号要连在一起
++        print "-----------";
++        print "The sum:",sum;
++}'
++
++exit 0
+\ No newline at end of file
+diff --git a/capters14/3.sh b/capters14/3.sh
+new file mode 100755
+index 0000000..7564c04
+--- /dev/null
++++ b/capters14/3.sh
+@@ -0,0 +1,59 @@
++#!/usr/bin/env bash
++
++#递归扫描目录,统计出每隔用户拥有的文件数
++#需要一个参数指定目录
++if [ $# != 1 ]
++then
++        echo
++        echo "Count how many files belog to which user"
++        echo "Usage:"
++        echo -e "\t `basename $0` [directory]"
++        echo
++        exit 1
++fi
++
++#递归的显示指定目录下的所有文件信息
++ls -lR "$1"|awk '
++#定义max函数,用来找出数组result中的最大值
++function max(arr,i,max_num){
++        max_num=0;
++        for(i in arr){
++            if(arr[i]>max_num){
++                max_num=arr[i];
++            }
++        }
++        return max_num
++}
++
++#定义函数process_length,计算要打印多少个#字符
++funtion process_length(curlength,maxlength){
++    return curlength/maxlength*50
++}
++
++BEGIN{
++        printf "%-10.10s%8s","User Name","File Num";
++}
++
++#主循环
++#只处理以-开始的行,也就是只处理普通文件
++/^-/{
++#每遇到一个普通文件,就把它的用户名作为索引值
++#把相应的数组对象的值加1,当主循环结束后可以得到各个用户拥有的文件数
++      result[$3]++
++}
++
++#当主循环结束后,计算并打印出进度条
++END{
++      max_lenth=max(result);
++      #使用for遍历result中的所有用户,并打印出他们拥有多少个文件
++      for(user in result){
++            printf "%-10.10s [%8d]:",user,result[user];
++            for(i=1;i<process_length(result[user],max_length);i++){
++                    printf "#";
++            }
++            printf "\n";
++      }
++}
++'
++
++exit 0
+\ No newline at end of file
+diff --git a/capters14/test.awk b/capters14/test.awk
+new file mode 100755
+index 0000000..04c4958
+--- /dev/null
++++ b/capters14/test.awk
+@@ -0,0 +1,18 @@
++#!/usr/bin/awk -f
++
++#在awk脚本中不要再使用单引号包围程序
++BEGIN{
++	  printf("%-15s%-8s%-13s%-5s%-8s%-5s%s\n","Filename","Time","Size","Group","User","Link","Right");
++	  printf("--------------\n");
++}
++
++
++#如果第一列不是total,则执行以下命令
++#丢弃包含total的行
++
++$1 !~/total/
++{
++	printf("%-15s%s\n",$1,$3);
++}
++
++#然后执行 ls -l | ./test.awk   ##ls -l的输出会作为awk程序的标准输入
+\ No newline at end of file
+diff --git a/capters14/test.txt b/capters14/test.txt
+new file mode 100755
+index 0000000..4605862
+--- /dev/null
++++ b/capters14/test.txt
+@@ -0,0 +1,15 @@
++##
++# User Database
++#
++# Note that this file is consulted directly only when the system is running
++# in single-user mode.  At other times this information is provided by
++# Open Directory.
++#
++# See the opendirectoryd(8) man page for additional information about
++# Open Directory.
++##
++nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
++root:*:0:0:System Administrator:/var/root:/bin/sh
++daemon:*:1:1:System Services:/var/root:/usr/bin/false
++_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
++_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
+diff --git a/capters14/tsh.txt b/capters14/tsh.txt
+new file mode 100755
+index 0000000..e651449
+--- /dev/null
++++ b/capters14/tsh.txt
+@@ -0,0 +1,8 @@
++N:aaaa
++N:aaaa
++N:aaaa
++N:aaaa
++B:bbbbb
++B:bbbbb
++S:oooo
++N:aaaa
+diff --git a/capters14/user.txt b/capters14/user.txt
+new file mode 100755
+index 0000000..45ad39f
+--- /dev/null
++++ b/capters14/user.txt
+@@ -0,0 +1,11 @@
++# 主循环开始前打印标题
++BEGIN{
++	  printf "%-15s%s\n","USERNAME","UID";
++	  printf "--------------\n";
++}
++#主循环开始执行
++#从／etc／passwd读取文件
++
++{
++	printf "%-15s%s\n",$1,$3
++}
+\ No newline at end of file
+diff --git a/capters15/1.sh b/capters15/1.sh
+new file mode 100755
+index 0000000..a81edd0
+--- /dev/null
++++ b/capters15/1.sh
+@@ -0,0 +1,16 @@
++#!/usr/bin/env bash
++
++#查找特定的用户名
++grep1 -E "[0-9]" year
++exit 0
++grep `whoami` /etc/passwd #查找当前登陆用户
++grep -v `whoami` /etc/passwd #查找所有非当前登陆用户
++
++grep 'test' ~/www/shell/  # 在文件夹中查找包含test字符的文件
++grep -i 'test' ~/www/shell/  # 在文件夹中查找包含test字符的文件,不区分大小写
++
++ps -lf|grep `whoami`#从当前进程中过滤出登陆用户
++
++grep -n "grep" *  #在文件中查找字符串,打印出行号和匹配项 文件名
++
++grep -l "grep" *  #只打印出包含符合查找记录的文件名
+diff --git a/capters15/2.sh b/capters15/2.sh
+new file mode 100755
+index 0000000..34aeae8
+--- /dev/null
++++ b/capters15/2.sh
+@@ -0,0 +1,6 @@
++#!/usr/bin/env bash
++
++if[ $1 = 0 ]; then
++echo 5
++
++fi
+\ No newline at end of file
+diff --git a/capters2/1.sh b/capters2/1.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/10.sh b/capters2/10.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/11.sh b/capters2/11.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/12.sh b/capters2/12.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/2.sh b/capters2/2.sh
+old mode 100644
+new mode 100755
+index 4aa7284..ccf9756
+--- a/capters2/2.sh
++++ b/capters2/2.sh
+@@ -15,6 +15,8 @@ PATHNAME=~/www/shell/capters1/1.sh
+ echo
+ echo -e "The whole pathname:\n\t $PATHNAME"
+ echo
++exit 0
++
+ #执行dirname得到目录名
+ DIRNAME=$(dirname $PATHNAME)
+ 
+diff --git a/capters2/3.sh b/capters2/3.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/4.sh b/capters2/4.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/5.sh b/capters2/5.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/6.sh b/capters2/6.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/7.sh b/capters2/7.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/8.sh b/capters2/8.sh
+old mode 100644
+new mode 100755
+diff --git a/capters2/9.sh b/capters2/9.sh
+old mode 100644
+new mode 100755
+diff --git a/capters3/.idea/capters3.iml b/capters3/.idea/capters3.iml
+new file mode 100755
+index 0000000..c956989
+--- /dev/null
++++ b/capters3/.idea/capters3.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/capters3/.idea/copyright/profiles_settings.xml b/capters3/.idea/copyright/profiles_settings.xml
+new file mode 100755
+index 0000000..e7bedf3
+--- /dev/null
++++ b/capters3/.idea/copyright/profiles_settings.xml
+@@ -0,0 +1,3 @@
++<component name="CopyrightManager">
++  <settings default="" />
++</component>
+\ No newline at end of file
+diff --git a/capters3/.idea/misc.xml b/capters3/.idea/misc.xml
+new file mode 100755
+index 0000000..7a540b7
+--- /dev/null
++++ b/capters3/.idea/misc.xml
+@@ -0,0 +1,71 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectDictionaryState">
++    <dictionary name="nj" />
++  </component>
++  <component name="ProjectInspectionProfilesVisibleTreeState">
++    <entry key="Project Default">
++      <profile-state>
++        <expanded-state>
++          <State>
++            <id />
++          </State>
++          <State>
++            <id>Cucumber</id>
++          </State>
++          <State>
++            <id>Data flow issuesJavaScript</id>
++          </State>
++          <State>
++            <id>JSON</id>
++          </State>
++          <State>
++            <id>JavaScript</id>
++          </State>
++          <State>
++            <id>JavaScript validity issuesJavaScript</id>
++          </State>
++          <State>
++            <id>PHP</id>
++          </State>
++          <State>
++            <id>Probable bugsPHP</id>
++          </State>
++          <State>
++            <id>Type compatibilityPHP</id>
++          </State>
++        </expanded-state>
++        <selected-state>
++          <State>
++            <id>AngularJS</id>
++          </State>
++        </selected-state>
++      </profile-state>
++    </entry>
++  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
++    <OptionsSetting value="true" id="Add" />
++    <OptionsSetting value="true" id="Remove" />
++    <OptionsSetting value="true" id="Checkout" />
++    <OptionsSetting value="true" id="Update" />
++    <OptionsSetting value="true" id="Status" />
++    <OptionsSetting value="true" id="Edit" />
++    <ConfirmationsSetting value="0" id="Add" />
++    <ConfirmationsSetting value="0" id="Remove" />
++  </component>
++  <component name="masterDetails">
++    <states>
++      <state key="ScopeChooserConfigurable.UI">
++        <settings>
++          <splitter-proportions>
++            <option name="proportions">
++              <list>
++                <option value="0.2" />
++              </list>
++            </option>
++          </splitter-proportions>
++        </settings>
++      </state>
++    </states>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/capters3/.idea/modules.xml b/capters3/.idea/modules.xml
+new file mode 100755
+index 0000000..35a4c6c
+--- /dev/null
++++ b/capters3/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/capters3.iml" filepath="$PROJECT_DIR$/.idea/capters3.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/capters3/.idea/workspace.xml b/capters3/.idea/workspace.xml
+new file mode 100755
+index 0000000..c45e511
+--- /dev/null
++++ b/capters3/.idea/workspace.xml
+@@ -0,0 +1,105 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="3fb104a8-28a2-4306-98ae-c271351b99b7" name="Default" comment="" />
++    <ignored path="capters3.iws" />
++    <ignored path=".idea/workspace.xml" />
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="TRACKING_ENABLED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="CreatePatchCommitExecutor">
++    <option name="PATCH_PATH" value="" />
++  </component>
++  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
++  <component name="FavoritesManager">
++    <favorites_list name="capters3" />
++  </component>
++  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
++  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
++  <component name="JsGulpfileManager">
++    <detection-done>true</detection-done>
++    <sorting>DEFINITION_ORDER</sorting>
++  </component>
++  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
++  <component name="ProjectFrameBounds">
++    <option name="x" value="64" />
++    <option name="y" value="23" />
++    <option name="width" value="1216" />
++    <option name="height" value="712" />
++  </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
++    <OptionsSetting value="true" id="Add" />
++    <OptionsSetting value="true" id="Remove" />
++    <OptionsSetting value="true" id="Checkout" />
++    <OptionsSetting value="true" id="Update" />
++    <OptionsSetting value="true" id="Status" />
++    <OptionsSetting value="true" id="Edit" />
++    <ConfirmationsSetting value="0" id="Add" />
++    <ConfirmationsSetting value="0" id="Remove" />
++  </component>
++  <component name="PropertiesComponent">
++    <property name="settings.editor.selected.configurable" value="project.scopes" />
++    <property name="settings.editor.splitter.proportion" value="0.2" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++  </component>
++  <component name="ShelveChangesManager" show_recycled="false">
++    <option name="remove_strategy" value="false" />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="3fb104a8-28a2-4306-98ae-c271351b99b7" name="Default" comment="" />
++      <created>1473873796773</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1473873796773</updated>
++      <workItem from="1473873798122" duration="5000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TimeTrackingManager">
++    <option name="totallyTimeSpent" value="5000" />
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="64" y="23" width="1216" height="712" extended-state="0" />
++    <editor active="true" />
++    <layout>
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
++      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++    </layout>
++  </component>
++  <component name="Vcs.Log.UiProperties">
++    <option name="RECENTLY_FILTERED_USER_GROUPS">
++      <collection />
++    </option>
++    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
++      <collection />
++    </option>
++  </component>
++  <component name="VcsContentAnnotationSettings">
++    <option name="myLimit" value="2678400000" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager />
++    <watches-manager />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/capters3/1.sh b/capters3/1.sh
+new file mode 100755
+index 0000000..59c63b0
+--- /dev/null
++++ b/capters3/1.sh
+@@ -0,0 +1,36 @@
++#!/usr/bin/env bash
++
++#把命令的输出结果保存到文件中
++#比如ls命令的输出
++#ls > ~/www/shell/command.txt
++
++#使用一系列的命令把输出同事重定向到一个文件中
++#{date;df -h;uptime;} > ~/www/shell/command.txt #貌似这个命令并不支持
++
++#使用shell重定向操作符>>来实现文件内容追加
++
++#输出到标准输出
++echo
++echo "Redirct standard output of command 'ls -C' into command.txt"
++echo
++echo "So plaease check command.txt file after running this script"
++echo
++
++
++#纪录脚本运行时间
++echo "(`date`)" >> ~/www/shell/command.txt
++
++
++#追加标准输出到文件
++echo "The file of $PWD is:" >> ~/www/shell/command.txt
++
++#以列的格式记录目录中的文件列表
++ls -C >> ~/www/shell/command.txt
++
++
++
++#在输出文件中追加一个换行符
++echo >> ~/www/shell/command.txt
++
++###若command.txt 不存在则, >> 和 >操作运算符的结果是一样的,都是输出到文件,
++###如果文件已存在的话,>> 不会覆盖  >会覆盖原有结果
+\ No newline at end of file
+diff --git a/capters3/1.tt b/capters3/1.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/2.sh b/capters3/2.sh
+new file mode 100755
+index 0000000..c89b07e
+--- /dev/null
++++ b/capters3/2.sh
+@@ -0,0 +1,18 @@
++#!/usr/bin/env bash
++#把/etc/passwd中的内容按行读取
++#cat -n /etc/passwd
++
++linenumber=1 #行号从数字1开始读取
++
++read oneline #从文件/etc/passwd中读取一行
++
++while ["$oneline"!=""]
++do
++  echo -e "linenumber:$oneline\n" #打印行号以及这行数据,然后打印一个换行符
++   #行号加1
++  linenmuber=`expr $linenumber+1`
++  #从文件读取下一行
++  read oneline
++done
++
++exit 0
+diff --git a/capters3/2.tt b/capters3/2.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/3.sh b/capters3/3.sh
+new file mode 100755
+index 0000000..b117ded
+--- /dev/null
++++ b/capters3/3.sh
+@@ -0,0 +1,39 @@
++#!/usr/bin/env bash
++#标准错误输出
++echo
++echo "create two files in current dir"
++echo " 'test.out' for standard output "
++echo " 'test.err' for error output "
++echo
++echo "please check their contents "
++
++# 同时列出存在和不存在的文件,并把结果重定向到不同的文件
++#如果没有指定的文件描述符,默认使用1,表示标准输出
++ls /bin/bash /bin/ls /bin/dd /bin/this_file_not_exist > test.out 2>test.err
++echo
++
++#exit 0  #退出shell程序
++
++#重定向到标准输出和标准错误输出到不同文件的语法格式为
++#command >standard.out 2>standard.err
++
++
++#---需求2------把标准输出和标准错误输出重定向到同一个文件------
++ls  /bin/bash /bin/ls /bin/dd /bin/this_file_not_exist &>same.out
++
++#重定向到标准输出
++ls  /bin/bash /bin/ls /bin/dd /bin/this_file_not_exist >same.out 2>&1
++
++#重定向到标准错误输出
++ls  /bin/bash /bin/ls /bin/dd /bin/this_file_not_exist 2>same.out 1>&2
++
++
++#把错误输出重定向到标准输出的语法格式是 command &> outputfile
++# 或者 command >& outputfile
++# 或者 command > outputfile 2>&1
++
++
++#---需求3-----把命令的标准错误输出重定向到指定文件------
++
++#在整个系统中查找一个文件
++find / -name "somefile" 2>~/www/shell/capters3/null.txt
+\ No newline at end of file
+diff --git a/capters3/4.2 b/capters3/4.2
+old mode 100644
+new mode 100755
+index 212c4ba..bb3dc37
+--- a/capters3/4.2
++++ b/capters3/4.2
+@@ -1 +1,2 @@
+-#!/usr/bin/env bash
+\ No newline at end of file
++#!/usr/bin/env bash
++#把
+\ No newline at end of file
+diff --git a/capters3/4.2.sh b/capters3/4.2.sh
+old mode 100644
+new mode 100755
+index 212c4ba..87616fa
+--- a/capters3/4.2.sh
++++ b/capters3/4.2.sh
+@@ -1 +1,11 @@
+-#!/usr/bin/env bash
+\ No newline at end of file
++#!/usr/bin/env bash
++#把输出结果保存到文件中的同事在屏幕上依然看到输出结果
++#比如,把/etc/passwd文件中的每一行都根据字母排序,把结果输出的同时,保存到sort文件
++
++#首先对文件/etc/passwd进行排序,然后添加行号
++#对标准输入进行赋值,一个输出到标准输出,一个输出到文件
++
++sort /etc/passwd |cat -n |tee sort.out sort2.out #可以同时跟多个文件
++#cat -n只是给排序结果加上行号,然后作为tee命令的输入
++
++
+diff --git a/capters3/4.3.sh b/capters3/4.3.sh
+old mode 100644
+new mode 100755
+index 212c4ba..2aa25e8
+--- a/capters3/4.3.sh
++++ b/capters3/4.3.sh
+@@ -1 +1,16 @@
+-#!/usr/bin/env bash
+\ No newline at end of file
++#!/usr/bin/env bash
++
++#删除一个目录下所有以.out结尾的文件
++
++find . -name "*.out" | rm #会报错 rm没有操作对象
++
++#解决方案:1 使用$(command)的方法使得命令command的输出作为命令行的参数
++touch {1..3}.tt
++rm -i $(find . -name '*.tt')
++
++#另一中方式是使用命令替代的方式
++touch {4..7}.tt
++rm -i `find . -name '*.tt'`
++
++#总结  rm只接受命令行参数,所以需要把之前运行的命令的结果作为命
++# 令行参数 可以使用 $(command) 或者
+diff --git a/capters3/4.sh b/capters3/4.sh
+new file mode 100755
+index 0000000..0d00e3b
+--- /dev/null
++++ b/capters3/4.sh
+@@ -0,0 +1,22 @@
++#!/usr/bin/env bash
++#管道
++#把一个程序的输出作为另一个程序的输入
++
++#行号从数字1开始
++linenumber=1
++
++#文件/etc/passwd的内容通过管道传递到read命令中
++cat $1 | while read oneline
++
++do
++   #打印行号及数据,然后打印一个自负
++   echo -e "$linenumber:$oneline \n"
++   #行
++   # 号加1
++  linenumber = `expr $linenumber+1`
++done
++exit
++
++#bash中管道的格式是 command1 | command2 |command3
++
++#sort命令会按照字母顺序对结果重排
+diff --git a/capters3/4.tt b/capters3/4.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/5-1.sh b/capters3/5-1.sh
+new file mode 100755
+index 0000000..9d47289
+--- /dev/null
++++ b/capters3/5-1.sh
+@@ -0,0 +1,19 @@
++#!/usr/bin/env bash
++
++#在shell脚本中的一行执行多个命令，要在每个命令的后边添加分号
++＃若在此时的最后一行天假输出重定向，希望所有输出都被重定向，实际上只有最后
++＃一个命令的结果会被重定向，如何解决 ？
++＃1 用() 将所有命令扩起来，形成块语句
++
++echo 
++echo "Block input is redirected to file 'b.out'"
++#把多个命令的输出一起重定向到文件中
++
++`( date;cd /etc;echo -n "current working dir:";pwd )`>a.out
++
++
++# 打印当前工作目录
++echo "Curretn Working dir :$PWD"
++echo 
++
++exit 0
+diff --git a/capters3/5-2.sh b/capters3/5-2.sh
+new file mode 100755
+index 0000000..192570f
+--- /dev/null
++++ b/capters3/5-2.sh
+@@ -0,0 +1,43 @@
++#!/usr/bin/env bash
++
++echo 
++echo -n "This Program add line numbers for a text file"
++
++#读取用户输入的文件路径
++read file
++
++echo 
++echo "Precessing each line of file $file"
++echo 
++
++count=0
++
++#从完整的路径中获得文件名
++filename=`basename $file`
++
++#每成功读取一行数据，while循环就会继续执行
++while read file 
++do 
++  #行号加1
++  count=$((count+1))
++  #在每一行的数据前边加上行号
++  echo $count:$line
++  #把文件中的数据作为while语句中read命令的标准输入
++  ＃同时把while循环的输出重定向到文件out.line
++  done <$file>$filename.lined
++
++  echo "Output file is $filename.lined"
++  echo 
++
++  exit 0
++
++
++
++
++
++
++
++
++
++
++
+diff --git a/capters3/5.sh b/capters3/5.sh
+new file mode 100755
+index 0000000..dde99eb
+--- /dev/null
++++ b/capters3/5.sh
+@@ -0,0 +1,17 @@
++#!/usr/bin/env bash
++
++#在shell脚本中的一行执行多个命令，要在每个命令的后边添加分号
++＃若在此时的最后一行天假输出重定向，希望所有输出都被重定向，实际上只有最后
++＃一个命令的结果会被重定向，如何解决 ？
++＃1 用｛｝将所有命令扩起来，形成块语句
++
++echo 
++echo "Block input is redirected to file 'b.out'"
++#把多个命令的输出一起重定向到文件中
++{ date;cd /etc;echo -n "Current working dir:";pwd } > ~/www/shell/cpters3/b.out
++
++
++# 打印当前工作目录
++echo "Curretn Working dir :$PWD"
++echo 
++exit 0
+diff --git a/capters3/5.tt b/capters3/5.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/6.sh b/capters3/6.sh
+new file mode 100755
+index 0000000..d816114
+--- /dev/null
++++ b/capters3/6.sh
+@@ -0,0 +1,8 @@
++#!/usr/bin/env bash
++#here doc 的语法认为 << 是输入指令，后边的delimeter是输入的开始，它会一直输出输入提示符，直到下一个delimeter
++
++lpr <<HERE
++>wewe
++>sdsd
++>ddsd
++>HERE
+diff --git a/capters3/6.tt b/capters3/6.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/7-2.sh b/capters3/7-2.sh
+old mode 100644
+new mode 100755
+index 212c4ba..b11a539
+--- a/capters3/7-2.sh
++++ b/capters3/7-2.sh
+@@ -1 +1,27 @@
+-#!/usr/bin/env bash
+\ No newline at end of file
++#!/usr/bin/env bash
++#将多个命令的输出保存为同一个文件,而不用多次输入
++#打开一个新的文件描述符,它被关联到exec.out
++echo
++echo "open file descriptor 4,which is associated with file exec.out"
++exec 4>exec.out
++echo
++
++#打开另一个文件描述符5.,它被关联到文件描述符4
++echo "open file descriptor 5,which is associated with file descriptor 4">&3
++exec 5>&4
++echo "sending server data .."
++
++#重定向标准输出文件描述符5
++echo "data stream from descriptor 1 STDOUT,"1>&5
++echo "redirect to file descriptor 5," 1>&5
++echo "then data will go to file descriptor 4,which is associated with file exec.out" >&5
++echo
++
++#任务完成后关闭文件描述符
++echo "closing fd 4"
++echo 4>&-
++echo "closing fd 5..."
++echo 5>&-
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters3/7-3.sh b/capters3/7-3.sh
+new file mode 100755
+index 0000000..8e83356
+--- /dev/null
++++ b/capters3/7-3.sh
+@@ -0,0 +1,8 @@
++#!/usr/bin/env bash
++#打开文件outputfile并把它关联到文件描述符fd,
++#如果文件已存在,则覆盖向其中写入数据
++ls >&4
++ls 1>&4
++exec 4>>/Users/nj/www/shell/command.txt
++
++
+diff --git a/capters3/7.sh b/capters3/7.sh
+new file mode 100755
+index 0000000..99ebc59
+--- /dev/null
++++ b/capters3/7.sh
+@@ -0,0 +1,12 @@
++#!/usr/bin/env bash
++#未通过测试
++echo
++echo "sending server data to file 3.."
++
++echo
++#发送数据到文件描述符3
++echo "sending server data to file 3.." >&4
++echo
++echo "sending server data to file 4.."
++#发送数据到文件描述符4
++echo "sending server data to file 4.." >&4
+diff --git a/capters3/7.tt b/capters3/7.tt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters3/8.sh b/capters3/8.sh
+new file mode 100755
+index 0000000..a4deb54
+--- /dev/null
++++ b/capters3/8.sh
+@@ -0,0 +1,8 @@
++#!/usr/bin/env bash
++##总结
++#本章知识点:
++#重定向标准输出,标准输入和错误输出
++#如何创建管道构建复杂的工具
++#重定向标准输出时,如何避免覆盖已有的数据
++#对于while  for  until  case这样的快语句,如何重定向他们的输出输入
++#如何自定义文件描述符以及文件描述符的作用
+\ No newline at end of file
+diff --git a/capters3/exec.out b/capters3/exec.out
+new file mode 100755
+index 0000000..127bc6e
+--- /dev/null
++++ b/capters3/exec.out
+@@ -0,0 +1,3 @@
++data stream from descriptor 1 STDOUT,1
++redirect to file descriptor 5,
++then data will go to file descriptor 4,which is associated with file exec.out
+diff --git a/capters3/null.txt b/capters3/null.txt
+new file mode 100755
+index 0000000..21cb608
+--- /dev/null
++++ b/capters3/null.txt
+@@ -0,0 +1,101 @@
++find: /.DocumentRevisions-V100: Permission denied
++find: /.fseventsd: Permission denied
++find: /.Spotlight-V100: Permission denied
++find: /.Trashes: Permission denied
++find: /dev/fd/3: Not a directory
++find: /dev/fd/4: Not a directory
++find: /Library/Application Support/Apple/ParentalControls/Users: Permission denied
++find: /Library/Application Support/ApplePushService: Permission denied
++find: /Library/Application Support/com.apple.TCC: Permission denied
++find: /Library/Caches/com.apple.iconservices.store: Permission denied
++find: /private/etc/cups/certs: Permission denied
++find: /private/var/agentx: Permission denied
++find: /private/var/at/tabs: Permission denied
++find: /private/var/at/tmp: Permission denied
++find: /private/var/audit: Permission denied
++find: /private/var/backups: Permission denied
++find: /private/var/db/caches/opendirectory: Permission denied
++find: /private/var/db/ConfigurationProfiles/Setup: Permission denied
++find: /private/var/db/ConfigurationProfiles/Store: Permission denied
++find: /private/var/db/dhcpclient: Permission denied
++find: /private/var/db/diagnostics: Permission denied
++find: /private/var/db/dslocal/nodes/Default: Permission denied
++find: /private/var/db/geod: Permission denied
++find: /private/var/db/locationd: Permission denied
++find: /private/var/db/net-snmp: Permission denied
++find: /private/var/db/nsurlsessiond: Permission denied
++find: /private/var/db/securityagent: Permission denied
++find: /private/var/db/Spotlight: Permission denied
++find: /private/var/db/sudo: Permission denied
++find: /private/var/db/TokenCache: Permission denied
++find: /private/var/folders/79/3dtmxshx2hg6klp5cts_n9440000gp/C: Permission denied
++find: /private/var/folders/79/3dtmxshx2hg6klp5cts_n9440000gp/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.pluginkit: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.revisiond.temp: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/0/com.apple.Spotlight: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n000000h000004/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n000003000000r/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n000006w00001q/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n0000084000021/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000b400002s/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000bh00002w/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000c4000031/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000c4000031/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s0000068/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000s800006_/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000sm00006d/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000th00006m/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000tm00006n/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000vr00006y/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000xc00007b/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y000007h/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y400007j/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000y800007k/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000yc00007l/T: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.notificationcenter: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/0/com.apple.pluginkit: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/C: Permission denied
++find: /private/var/folders/zz/zyxvpxvq6csfxvn_n00000z000007r/T: Permission denied
++find: /private/var/jabberd: Permission denied
++find: /private/var/lib/postfix: Permission denied
++find: /private/var/log/com.apple.revisiond: Permission denied
++find: /private/var/root: Permission denied
++find: /private/var/run/.vfs_rsrc_streams_0x1c43fda6013bdf690: Permission denied
++find: /private/var/run/mds: Permission denied
++find: /private/var/spool/cups: Permission denied
++find: /private/var/spool/fax: Permission denied
++find: /private/var/spool/mqueue: Permission denied
++find: /private/var/spool/postfix/active: Permission denied
++find: /private/var/spool/postfix/bounce: Permission denied
++find: /private/var/spool/postfix/corrupt: Permission denied
++find: /private/var/spool/postfix/defer: Permission denied
++find: /private/var/spool/postfix/deferred: Permission denied
++find: /private/var/spool/postfix/flush: Permission denied
++find: /private/var/spool/postfix/hold: Permission denied
++find: /private/var/spool/postfix/incoming: Permission denied
++find: /private/var/spool/postfix/maildrop: Permission denied
++find: /private/var/spool/postfix/private: Permission denied
++find: /private/var/spool/postfix/public: Permission denied
++find: /private/var/spool/postfix/saved: Permission denied
++find: /private/var/spool/postfix/trace: Permission denied
++find: /System/Library/Caches/com.apple.coresymbolicationd: Permission denied
++find: /System/Library/DirectoryServices/DefaultLocalDB/Default: Permission denied
++find: /System/Library/User Template: Permission denied
++find: /Users/Guest/Desktop: Permission denied
++find: /Users/Guest/Documents: Permission denied
++find: /Users/Guest/Downloads: Permission denied
++find: /Users/Guest/Library: Permission denied
++find: /Users/Guest/Movies: Permission denied
++find: /Users/Guest/Music: Permission denied
++find: /Users/Guest/Pictures: Permission denied
++find: /Users/Guest/Public/Drop Box: Permission denied
+diff --git a/capters3/same.out b/capters3/same.out
+new file mode 100755
+index 0000000..1d550dd
+--- /dev/null
++++ b/capters3/same.out
+@@ -0,0 +1,4 @@
++ls: /bin/this_file_not_exist: No such file or directory
++/bin/bash
++/bin/dd
++/bin/ls
+diff --git a/capters3/sort.out b/capters3/sort.out
+new file mode 100755
+index 0000000..89622df
+--- /dev/null
++++ b/capters3/sort.out
+@@ -0,0 +1,96 @@
++     1	#
++     2	# 
++     3	# Note that this file is consulted directly only when the system is running
++     4	# Open Directory.
++     5	# Open Directory.
++     6	# See the opendirectoryd(8) man page for additional information about
++     7	# User Database
++     8	# in single-user mode.  At other times this information is provided by
++     9	##
++    10	##
++    11	_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
++    12	_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
++    13	_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
++    14	_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
++    15	_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
++    16	_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
++    17	_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
++    18	_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
++    19	_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
++    20	_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
++    21	_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
++    22	_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
++    23	_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
++    24	_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
++    25	_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
++    26	_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
++    27	_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
++    28	_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
++    29	_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
++    30	_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false
++    31	_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false
++    32	_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
++    33	_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
++    34	_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
++    35	_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
++    36	_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
++    37	_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false
++    38	_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
++    39	_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false
++    40	_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
++    41	_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
++    42	_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
++    43	_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
++    44	_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
++    45	_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
++    46	_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
++    47	_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
++    48	_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
++    49	_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
++    50	_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
++    51	_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
++    52	_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
++    53	_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
++    54	_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
++    55	_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
++    56	_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
++    57	_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash
++    58	_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
++    59	_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
++    60	_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
++    61	_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
++    62	_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
++    63	_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
++    64	_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false
++    65	_nsurlstoraged:*:243:243:NSURLStorage Daemon:/var/empty:/usr/bin/false
++    66	_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false
++    67	_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
++    68	_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
++    69	_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
++    70	_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
++    71	_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
++    72	_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
++    73	_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false
++    74	_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
++    75	_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
++    76	_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
++    77	_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
++    78	_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
++    79	_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
++    80	_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
++    81	_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
++    82	_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
++    83	_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
++    84	_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
++    85	_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
++    86	_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
++    87	_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
++    88	_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
++    89	_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
++    90	_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
++    91	_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
++    92	_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false
++    93	_xserverdocs:*:251:251:OS X Server Documents Service:/var/empty:/usr/bin/false
++    94	daemon:*:1:1:System Services:/var/root:/usr/bin/false
++    95	nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
++    96	root:*:0:0:System Administrator:/var/root:/bin/sh
+diff --git a/capters3/sort2.out b/capters3/sort2.out
+new file mode 100755
+index 0000000..89622df
+--- /dev/null
++++ b/capters3/sort2.out
+@@ -0,0 +1,96 @@
++     1	#
++     2	# 
++     3	# Note that this file is consulted directly only when the system is running
++     4	# Open Directory.
++     5	# Open Directory.
++     6	# See the opendirectoryd(8) man page for additional information about
++     7	# User Database
++     8	# in single-user mode.  At other times this information is provided by
++     9	##
++    10	##
++    11	_amavisd:*:83:83:AMaViS Daemon:/var/virusmails:/usr/bin/false
++    12	_appleevents:*:55:55:AppleEvents Daemon:/var/empty:/usr/bin/false
++    13	_appowner:*:87:87:Application Owner:/var/empty:/usr/bin/false
++    14	_appserver:*:79:79:Application Server:/var/empty:/usr/bin/false
++    15	_ard:*:67:67:Apple Remote Desktop:/var/empty:/usr/bin/false
++    16	_assetcache:*:235:235:Asset Cache Service:/var/empty:/usr/bin/false
++    17	_astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
++    18	_atsserver:*:97:97:ATS Server:/var/empty:/usr/bin/false
++    19	_avbdeviced:*:229:-2:Ethernet AVB Device Daemon:/var/empty:/usr/bin/false
++    20	_calendar:*:93:93:Calendar:/var/empty:/usr/bin/false
++    21	_ces:*:32:32:Certificate Enrollment Service:/var/empty:/usr/bin/false
++    22	_clamav:*:82:82:ClamAV Daemon:/var/virusmails:/usr/bin/false
++    23	_coreaudiod:*:202:202:Core Audio Daemon:/var/empty:/usr/bin/false
++    24	_coremediaiod:*:236:236:Core Media IO Daemon:/var/empty:/usr/bin/false
++    25	_cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
++    26	_cvs:*:72:72:CVS Server:/var/empty:/usr/bin/false
++    27	_cyrus:*:77:6:Cyrus Administrator:/var/imap:/usr/bin/false
++    28	_devdocs:*:59:59:Developer Documentation:/var/empty:/usr/bin/false
++    29	_devicemgr:*:220:220:Device Management Server:/var/empty:/usr/bin/false
++    30	_displaypolicyd:*:244:244:Display Policy Daemon:/var/empty:/usr/bin/false
++    31	_distnote:*:241:241:DistNote:/var/empty:/usr/bin/false
++    32	_dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
++    33	_dovenull:*:227:227:Dovecot Authentication:/var/empty:/usr/bin/false
++    34	_dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
++    35	_eppc:*:71:71:Apple Events User:/var/empty:/usr/bin/false
++    36	_ftp:*:98:-2:FTP Daemon:/var/empty:/usr/bin/false
++    37	_gamecontrollerd:*:247:247:Game Controller Daemon:/var/empty:/usr/bin/false
++    38	_geod:*:56:56:Geo Services Daemon:/var/db/geod:/usr/bin/false
++    39	_iconservices:*:240:240:IconServices:/var/empty:/usr/bin/false
++    40	_installassistant:*:25:25:Install Assistant:/var/empty:/usr/bin/false
++    41	_installer:*:96:-2:Installer:/var/empty:/usr/bin/false
++    42	_jabber:*:84:84:Jabber XMPP Server:/var/empty:/usr/bin/false
++    43	_kadmin_admin:*:218:-2:Kerberos Admin Service:/var/empty:/usr/bin/false
++    44	_kadmin_changepw:*:219:-2:Kerberos Change Password Service:/var/empty:/usr/bin/false
++    45	_krb_anonymous:*:234:-2:Open Directory Kerberos Anonymous:/var/empty:/usr/bin/false
++    46	_krb_changepw:*:232:-2:Open Directory Kerberos Change Password Service:/var/empty:/usr/bin/false
++    47	_krb_kadmin:*:231:-2:Open Directory Kerberos Admin Service:/var/empty:/usr/bin/false
++    48	_krb_kerberos:*:233:-2:Open Directory Kerberos:/var/empty:/usr/bin/false
++    49	_krb_krbtgt:*:230:-2:Open Directory Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
++    50	_krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
++    51	_krbtgt:*:217:-2:Kerberos Ticket Granting Ticket:/var/empty:/usr/bin/false
++    52	_launchservicesd:*:239:239:_launchservicesd:/var/empty:/usr/bin/false
++    53	_lda:*:211:211:Local Delivery Agent:/var/empty:/usr/bin/false
++    54	_locationd:*:205:205:Location Daemon:/var/db/locationd:/usr/bin/false
++    55	_lp:*:26:26:Printing Services:/var/spool/cups:/usr/bin/false
++    56	_mailman:*:78:78:Mailman List Server:/var/empty:/usr/bin/false
++    57	_mbsetupuser:*:248:248:Setup User:/var/setup:/bin/bash
++    58	_mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
++    59	_mdnsresponder:*:65:65:mDNSResponder:/var/empty:/usr/bin/false
++    60	_mysql:*:74:74:MySQL Server:/var/empty:/usr/bin/false
++    61	_netbios:*:222:222:NetBIOS:/var/empty:/usr/bin/false
++    62	_netstatistics:*:228:228:Network Statistics Daemon:/var/empty:/usr/bin/false
++    63	_networkd:*:24:24:Network Services:/var/networkd:/usr/bin/false
++    64	_nsurlsessiond:*:242:242:NSURLSession Daemon:/var/db/nsurlsessiond:/usr/bin/false
++    65	_nsurlstoraged:*:243:243:NSURLStorage Daemon:/var/empty:/usr/bin/false
++    66	_ondemand:*:249:249:On Demand Resource Daemon:/var/db/ondemand:/usr/bin/false
++    67	_postfix:*:27:27:Postfix Mail Server:/var/spool/postfix:/usr/bin/false
++    68	_postgres:*:216:216:PostgreSQL Server:/var/empty:/usr/bin/false
++    69	_qtss:*:76:76:QuickTime Streaming Server:/var/empty:/usr/bin/false
++    70	_sandbox:*:60:60:Seatbelt:/var/empty:/usr/bin/false
++    71	_screensaver:*:203:203:Screensaver:/var/empty:/usr/bin/false
++    72	_scsd:*:31:31:Service Configuration Service:/var/empty:/usr/bin/false
++    73	_securityagent:*:92:92:SecurityAgent:/var/db/securityagent:/usr/bin/false
++    74	_serialnumberd:*:58:58:Serial Number Daemon:/var/empty:/usr/bin/false
++    75	_softwareupdate:*:200:200:Software Update Service:/var/empty:/usr/bin/false
++    76	_spotlight:*:89:89:Spotlight:/var/empty:/usr/bin/false
++    77	_sshd:*:75:75:sshd Privilege separation:/var/empty:/usr/bin/false
++    78	_svn:*:73:73:SVN Server:/var/empty:/usr/bin/false
++    79	_taskgated:*:13:13:Task Gate Daemon:/var/empty:/usr/bin/false
++    80	_teamsserver:*:94:94:TeamsServer:/var/teamsserver:/usr/bin/false
++    81	_timezone:*:210:210:AutoTimeZoneDaemon:/var/empty:/usr/bin/false
++    82	_tokend:*:91:91:Token Daemon:/var/empty:/usr/bin/false
++    83	_trustevaluationagent:*:208:208:Trust Evaluation Agent:/var/empty:/usr/bin/false
++    84	_unknown:*:99:99:Unknown User:/var/empty:/usr/bin/false
++    85	_update_sharing:*:95:-2:Update Sharing:/var/empty:/usr/bin/false
++    86	_usbmuxd:*:213:213:iPhone OS Device Helper:/var/db/lockdown:/usr/bin/false
++    87	_uucp:*:4:4:Unix to Unix Copy Protocol:/var/spool/uucp:/usr/sbin/uucico
++    88	_warmd:*:224:224:Warm Daemon:/var/empty:/usr/bin/false
++    89	_webauthserver:*:221:221:Web Auth Server:/var/empty:/usr/bin/false
++    90	_windowserver:*:88:88:WindowServer:/var/empty:/usr/bin/false
++    91	_www:*:70:70:World Wide Web Server:/Library/WebServer:/usr/bin/false
++    92	_wwwproxy:*:252:252:WWW Proxy:/var/empty:/usr/bin/false
++    93	_xserverdocs:*:251:251:OS X Server Documents Service:/var/empty:/usr/bin/false
++    94	daemon:*:1:1:System Services:/var/root:/usr/bin/false
++    95	nobody:*:-2:-2:Unprivileged User:/var/empty:/usr/bin/false
++    96	root:*:0:0:System Administrator:/var/root:/bin/sh
+diff --git a/capters3/test.err b/capters3/test.err
+new file mode 100755
+index 0000000..1978b06
+--- /dev/null
++++ b/capters3/test.err
+@@ -0,0 +1 @@
++ls: /bin/this_file_not_exist: No such file or directory
+diff --git a/capters3/test.out b/capters3/test.out
+new file mode 100755
+index 0000000..ca54cb3
+--- /dev/null
++++ b/capters3/test.out
+@@ -0,0 +1,3 @@
++/bin/bash
++/bin/dd
++/bin/ls
+diff --git a/capters3/test.txt b/capters3/test.txt
+new file mode 100755
+index 0000000..1954b57
+--- /dev/null
++++ b/capters3/test.txt
+@@ -0,0 +1,5 @@
++ttttt
++sssss
++dddd
++ffff
++
+diff --git a/capters3/test.txt.lined b/capters3/test.txt.lined
+new file mode 100755
+index 0000000..7951742
+--- /dev/null
++++ b/capters3/test.txt.lined
+@@ -0,0 +1,5 @@
++1:
++2:
++3:
++4:
++5:
+diff --git a/capters3/y.out b/capters3/y.out
+new file mode 100755
+index 0000000..901a4fd
+--- /dev/null
++++ b/capters3/y.out
+@@ -0,0 +1,28 @@
++2016年 9月14日 星期三 05时14分31秒 PDT
++1.sh
++1.tt
++2.sh
++2.tt
++3.sh
++3.tt
++4.2
++4.2.sh
++4.3.sh
++4.sh
++4.tt
++5-1.sh
++5.sh
++5.tt
++6.sh
++6.tt
++7.sh
++7.tt
++8.sh
++null.txt
++same.out
++sort.out
++sort2.out
++test.err
++test.out
++y.out
++ 5:14  up 7 days, 20:49, 3 users, load averages: 1.03 1.22 1.49
+diff --git a/capters4/1-2.sh b/capters4/1-2.sh
+new file mode 100755
+index 0000000..c344d9e
+--- /dev/null
++++ b/capters4/1-2.sh
+@@ -0,0 +1,16 @@
++#!/usr/bin/env bash
++#指定关联的终端 -t(ps提供了大量的过滤条件)
++ps -ft  /dev/pts/1
++
++#-p指定关心的pid列表
++ps -fp PID
++
++#查找指定用户的所有进程
++ps -fu nj #实际用户
++#实际用户是标识那个用户创建了这个进程,不会指定进程的文件访问权限
++#有效用户与实际用户的用户名相同,只有对那些设置了set-uid的程序来说有效用户名才会改变
++
++#查看当前系统运行的所有apache程序
++ps  -fC  apache2 #unix要求所以的网络服务进程都不能关联到任何一个终端
++
++pstree #显示进程树
+\ No newline at end of file
+diff --git a/capters4/1.sh b/capters4/1.sh
+new file mode 100755
+index 0000000..75746aa
+--- /dev/null
++++ b/capters4/1.sh
+@@ -0,0 +1,12 @@
++#!/usr/bin/env bash
++
++ps -ef  #system V unix查看进程
++#unix分为system V unix和BSD unix
++ps aux  #BSD unix查看进程   GNU unix可以支持两种形式
++#option 说明:
++#-e | -A 列出全部进程
++#-f 用完整的格式显示每一个进程的信息
++#使用-f时,进程列表的标题包括uid(进程所有者),pid(进程唯一标识)
++#ppid进程父id
++#标题C粗略的纪录了每一个进程所占CPU的时间,stime中纪录了启动改进程的时间
++#若关联当前进程都某一个终端,它会被记录在TTY中,time中是这个进程消耗CPU的四件
+diff --git a/capters4/2.sh b/capters4/2.sh
+new file mode 100755
+index 0000000..f046fc2
+--- /dev/null
++++ b/capters4/2.sh
+@@ -0,0 +1,43 @@
++#!/usr/bin/env bash
++
++#一个进程在执行的过程中,可以输入其它命令,但不会被执行
++#eg:ls尽管它执行的时间很短,但在执行的过程中,命令提示符依然被它占据,不能执行其它的命令
++#编译Linux kernel,make需要较长时间,怎么放到后台运行 ?
++#make 后边加上&  eg : make &
++make>make.out 2>&1 &  #将标准错误重定向输出到文件make.out
++
++#查看当前终端的后台进程
++jobs
++
++cat - #从终端读入,而不是从文件读入
++
++#ctrl+z终止前台进程(用jobs查看可发现状态是stopped),执行bg把挂起的进程放到后台继续执行
++#(用jobs查看可发现状态是running)
++
++stty #显示当前终端的配置
++
++#从运行后台进程的终端shell推出,会同事杀死作为子进程的后台进程,若要防止这种事的放生,
++#在要执行的命令前加上nohup,这样附近吃退出之后进程由init进程接管
++
++nohup make>make.out 2>&1 &  #将标准错误重定向输出到文件make.out
++
++#使用jobs查看进程状态,可以发现是stopped状态
++jobs
++
++#使用bg把挂起的进程移到后台继续执行
++bg %1  #1是进程挂起时返回的任务号  %任务号,可以快速唤起一个进程
++
++#使用jobs查看进程状态,可以发现是running状态
++jobs
++
++#使用ctrl+z使得前台进程被挂起之后,当前的终端提示符可以再次使用,被挂起的进程仍在系统内存里,只是它不在获得CPU时间,被
++# 暂停在那里,此时可以使用bg命令把它放到后台执行,也可以使用fg命令,把它放回前台执行
++
++#当前进程退出时,由它创建的子进程也会被退出,可以在执行的命令前加nohu避免
++#这样可以在父进程退出时,让init进程来接管后台进程
++#tty006  代表是终端进程,若是? 代表是非终端进程
++
++##重要提示:
++#后台执行的程序要使用重定向操作是,一定要把后台的运行富豪&放到命令行的最后,否则重定向命令操作符会失去作用
++#fg  bg命令操作是,任务号的前边要加上%
++#后台进程没有正常结束之前退出终端,会终止后台进程,使用nophup命令保证后台进程的执行
+diff --git a/capters4/3-2.sh b/capters4/3-2.sh
+new file mode 100755
+index 0000000..b0e5804
+--- /dev/null
++++ b/capters4/3-2.sh
+@@ -0,0 +1,27 @@
++#!/usr/bin/env bash
++
++#如果一台机器上运行着很多同一个服务的进程,可以使用killall
++#使用root权限启动apache服务器
++sudo /etc/init.d/apache2 restart
++
++#查看apache的进程
++ps -fC apache2
++
++#普通用户不允许杀死所有的apache进程
++killall apache2 #operation not  permitted
++
++#使用root用户可以
++sudo killall apache2
++
++#检查killall命令的退出状态
++echo  $?
++
++#再次检查apache进程的存在,显示没有
++ps -fC apache2
++
++##使用kill或者killall 都可以结束进程,更简单的做法是ctrl+c
++
++
++
++
++
+diff --git a/capters4/3.sh b/capters4/3.sh
+new file mode 100755
+index 0000000..05ebe55
+--- /dev/null
++++ b/capters4/3.sh
+@@ -0,0 +1,21 @@
++#!/usr/bin/env bash
++#终止程序的执行
++#可以使用shell的内建命令来结束正在执行的进程
++#使用nohup在后台运行make进程
++nohup make &
++#返回 [1]1641
++
++#使用bash显示出job Id,进程的PID和命令提示符
++#并且显示nohup会把make的输出重定向到文件nohup.out中
++nohup:ignoring input and appending output to 'nohup.out'
++
++#使用jobs命令查看后台进程
++jobs -l
++[1]+ 1641 running  nohup make &
++
++#使用pid查看make进程
++ps -ef 1641
++##显示如下
++# UID   PID  PPID   C STIME   TTY           TIME CMD
++# 501 89931 89929   0  4:42上午 ttys006    0:00.17 -bash
++
+diff --git a/capters4/4-2.sh b/capters4/4-2.sh
+new file mode 100755
+index 0000000..9bd62b3
+--- /dev/null
++++ b/capters4/4-2.sh
+@@ -0,0 +1,25 @@
++#!/usr/bin/env bash
++
++#/proc包含了很多硬件信息,如何查看
++
++cat /proc/devices  #查看所以的可用设备,包括字符设备和块设备
++
++cat /proc/cpuinfo #查看cpu信息
++
++cat /proc/filesystem #查看支持的文件系统
++
++cat /proc/ioports #查看系统的I/O端口
++
++cat /proc/interrupts  #查看中断信息
++
++cat /proc/modules # 查看模块儿列表
++
++cat /proc/mounts #查看挂载的文件系统
++
++cat  /proc/swaps # 查看交换分区的使用情况
++
++cat /prc/patitions #查看心疼分区的情况
++
++cat /proc/version  #查看当前系统的内核版本
++
++
+diff --git a/capters4/4.sh b/capters4/4.sh
+new file mode 100755
+index 0000000..2660d65
+--- /dev/null
++++ b/capters4/4.sh
+@@ -0,0 +1,27 @@
++#!/usr/bin/env bash
++#查看当前shell进程的相关信息
++
++#进入/proc/文件系统,找到对应bash进程的目录,查看其中的文件呢
++
++echo $$  #通过特殊变量$$查看当前进程的PID
++17352
++
++#进入文件系统下响应的目录
++cd /proc/17352
++
++#目录包含进程的所有信息,且进程的目录结构都是相同的
++ls -l
++
++##如何打开系统的路由功能
++#可以通过修改 /proc/sys/net/ipv4/ip_forward
++#打开IP转发功能
++sudo echo 1>/proc/sys/net/ipv4/ip_forward
++
++#关闭IP转发功能
++echo 0>/proc/sys/net/ipv4/ip_forward
++#proc/sys/子目录的作用是像系统管理员报告各种不同的内核参数,
++#与/proc/文件系统中的大部分文件不同,改目录下的某些文件是可以写入的,只不过,只有root才可以
++#常见的就是路由转发,如上所示
++#注意,改变是临时的,系统重启会回到默认值
++#要想在启动时改变,修改/etc/sysctl.conf,c参考sysctl。conf(5)
++
+diff --git a/capters4/5.txt b/capters4/5.txt
+new file mode 100755
+index 0000000..75c16ac
+--- /dev/null
++++ b/capters4/5.txt
+@@ -0,0 +1,9 @@
++#本章总结
++(1)如何查看系统进程
++(2)如何指定过滤无关进程
++(3)查看进程父子关系
++(4)启动前台进程
++(5)调度前后台进程
++(6)终止进程
++(7)从/proc文件系统查看某一个进程的相关信息
++(8)从/proc文件系统查看系统的硬件信息
+\ No newline at end of file
+diff --git a/capters5/1-2.sh b/capters5/1-2.sh
+new file mode 100755
+index 0000000..ade7cc5
+--- /dev/null
++++ b/capters5/1-2.sh
+@@ -0,0 +1,65 @@
++#!/usr/bin/env bash
++#使用wc可以统计文本的行数 字数和字符数,但不能统计每个单词出现的个数
++#自己构建脚本实现统计一个单词出现的单词个数
++
++#cat name.txt|wc ##得到 2  3  8分别是字数  行数 和字节数
++#wc -l `find -name *.c` #统计一个目录下所有文件的行数
++count(){
++#函数需要一个参数才能正确调用
++if [ $# != 1 ] ##注意if和 比较运算符 != 的两边都要留空格
++  then
++     echo "Need one file paarameter to work!"
++     exit 1;
++  fi
++
++#删除标点符号和特殊字符
++#构建一个很长的管道命令,每一行都单独写在一行中,增加可读性
++tr '+-=*.,;:{}()<>"\n\t' ' '<$1 |\
++
++
++#把所有的大写字母转为小写
++tr 'A-Z' 'a-z'|\
++#把重复连续的空格符转换为一个空格符
++tr -s ' '|\
++
++#把所以空格符转换为换行符
++tr ' ' '\n'|\
++
++#把所有相同的单词放到一起
++sort|\
++
++#删除重复单词,并进行统计
++uniq -c|\
++
++#根据重复的次数进行排序
++sort -rn
++}
++
++echo
++echo "this script can count words of a specified file"
++
++#使用空命令 冒号 实现无限循环(:不做任何事,并且永远返回真)
++while :
++do
++   read -p "Enter the file path(or quit):"
++   case "$REPLY" in
++      [Qq]|[Qq][Uu][Ii][Tt])
++         echo "Bye"
++         #在输出大小写quit时,退出
++         exit 0
++         ;;
++      *)
++         #判断输入的是一个可读的普通文件,并且内容不为空
++         if [ -f"$REPLY" ] && [ -r "$REPLY" ] && [ -s "$REPLY" ]
++         then
++           #当用户输入一个合法文件时
++           #调用count统计文件的单词个数
++           count "$REPLY"
++         else
++           #如果输入了非法的文件,显示不能处理它
++           echo "$REPLY can notbe dealed with"
++         fi
++         ;;
++      esac
++   done
++exit 0
+\ No newline at end of file
+diff --git a/capters5/1-3.sh b/capters5/1-3.sh
+new file mode 100755
+index 0000000..64d67f0
+--- /dev/null
++++ b/capters5/1-3.sh
+@@ -0,0 +1,60 @@
++#!/usr/bin/env bash
++
++#定义函数count,用来统计字数
++
++count(){
++    #函数需要一个参数,才能正确调用
++    if [ $# != 1 ]
++    then
++        echo "Need one parame"
++        exit 1;
++    fi
++
++    #删除标点符号和特殊字符
++    #构建一个很长的管道命令,每一段都单独写在一行中,增加可读性
++    # [:punct:]所有代表标点的字符集  [:space:]把tab替换为空格  [:cntrl:]特殊的控制字符
++    tr '[:punct:]' ' '<$1 | tr '[:space:]' ' '|tr '[:cntrl:]' ' ' |\
++    #删除所有的数字
++    tr '[:digit:]' ' '|\
++    #把所有的答谢字母转换为小写
++    tr '[:upper:]' '[:lower:]'|\
++    #把连续重复的空格替换为一个空格
++    tr -s ' '|\   ###tr str1  str2 的中间要有空格  ''空格要隔开一个空白符
++    #把所有的空格替换为换行
++    tr ' ' '\n'|\
++    #把相同的单词放到一起
++    sort|\
++    #删除重复的单词,并统计
++    uniq -c|\
++    #根据重复的次数排序
++    sort -rn
++}
++
++echo
++echo "this script can count words of a special file"
++
++#使用空冒号构建无限循环
++while :
++do
++      read -p "Enter the file path(or quit):"
++      case "$REPLY" in
++             [Qq]|[Qq][Uu][Ii][Tt])
++                   echo "Bye"
++                   #在输入大小写quit时,退出
++                   exit 0;
++                   ;;
++             *)
++                   #判断输入是否一个可读的普通文件,且内容非空
++                   if [ -f "$REPLY" ] && [ -r "$REPLY" ] && [ -s "$REPLY" ]
++                   then
++                       #当用户输入一个合法文件时
++#                       调用count统计文件字数
++                        count "$REPLY"
++                   else
++                       #输入非法文件
++                       echo "$REPLY cannot be deal"
++                   fi
++                   ;;
++             esac
++      done
++      exit 0
+\ No newline at end of file
+diff --git a/capters5/1-4.sh b/capters5/1-4.sh
+new file mode 100755
+index 0000000..a2051c7
+--- /dev/null
++++ b/capters5/1-4.sh
+@@ -0,0 +1,10 @@
++#!/usr/bin/env bash
++
++#显示包含空格的文件
++cat name.txt
++
++#cat命令的-T选项把tab字符显示为 ^I
++cat -T name.txt
++
++#使用expand命令把tab替换为空格
++expand name.txt|cat -T
+\ No newline at end of file
+diff --git a/capters5/1.sh b/capters5/1.sh
+new file mode 100755
+index 0000000..105e25c
+--- /dev/null
++++ b/capters5/1.sh
+@@ -0,0 +1,57 @@
++#!/usr/bin/env bash
++
++#从一个目录中取出最近访问过的5个普通文件,并且要求输出最后的文件名和最后的访问时间
++
++#用ls 的-u -t选项根据文件的风文件夹对文件列表排序,再让输出的结果经过head过滤,就可以得到列表前5行
++#最后可以使用cut命令剪切无关数据,只保留访问时间和文件名
++ls -lut|grep "^-"|head -5|cut -c41-
++#grep "^-"是正则匹配,-匹配普通文件
++#-t按时间排序
++#head -5 取前5条结果
++#cut 删除无关信息 n 第n个字符 n- n到行尾 n-m n到m -m1到n个字符
++
++paste -d':' name.txt tel.txt |cat -n #将name.txt和tel.txt中的内容拼接
++
++#paste与cut的作用刚好相反,是把文件连接到一起
++paste -d'<' name.txt tel.txt |paste -d'>' - name.txt|cat -n
++#注意第二个paste命令,有一个参数是- 用来表示从标准输入中读取数据,二此时的标准输入是从管道上传递过来的上一个paste命令的连接结果
++#与nametxt的内容再次连接
++
++##查看当前系统中的各种shell程序,统计有多少个用户在使用,并把统计结果按照从多到少的顺序打印出来
++#使用cut从文件的每一行数据中剪切出一部分,使用sort
++#合并,使用uniq统计shell的使用次数,再sort排序
++cat /etc/passwd|cut  -d:-f7|sort|uniq -c|sort -nr
++# shell默认使用tab作为分隔符,为了让它使用: 可以使用-d选项
++#-f表示fields shell字段表示的是每行的第几个字段
++#sort认为11排在100的后边,因为1大于0  为了按数字排序,可以使用-n -r
++#-r(--reverse)
++
++##tr str1  str2 将str1替换为str2
++cat file| tr "abc" "xyz">new file #将文件中出现的abc替换为xyz
++
++
++#使用tr命令统一大小写
++cat file|tr [a-z] [A-Z]>new file
++
++#将文件中的数字替换为a-j
++cat file|tr [0-9] [a-j]>new file
++
++#删除文件中出现的"test"字符
++cat file|tr -d "test">new file
++
++#删除文件中"连续着"的重复字母,只保留第一个
++cat file |tr -s [a-zA-Z]>new file
++
++#删除文件file中出现的换行\n  制表\t
++cat file|tr -d "\n\t">new file
++
++#删除空行
++cat file|tr -s "\r">new file
++
++#把路径变量中的":"替换为"\n"
++
++echo $PATH|tr -s ":" "\n"
++
++
++
++
+diff --git a/capters5/2-2.sh b/capters5/2-2.sh
+new file mode 100755
+index 0000000..d7ae051
+--- /dev/null
++++ b/capters5/2-2.sh
+@@ -0,0 +1,26 @@
++#!/usr/bin/env bash
++
++#得到一个字符的长度
++
++echo
++echo  "The script will tell you the length of your input"
++
++#使用空冒号构建无限循环
++while :
++do
++      read -p "Please Enter a string(or quit):"
++      case "$REPLY" in
++            [Qq]|[Qq][Uu][Ii][Tt])
++                     echo "Bye"
++                     #并在输入quit时退出
++                     exit 0
++                     ;;
++             *)
++                     #使用expr命令计算字符串的长度
++                     LEN = $(expr length "$REPLY")
++                     echo "Length:"$LEN $REPLY
++                     ;;
++      esac
++done
++
++exit 0
+\ No newline at end of file
+diff --git a/capters5/2-3.sh b/capters5/2-3.sh
+new file mode 100755
+index 0000000..e8d60f7
+--- /dev/null
++++ b/capters5/2-3.sh
+@@ -0,0 +1,15 @@
++#!/usr/bin/env bash
++
++expr length STRING #获得字符串的长度
++
++expr substr STRING POS LENGTH #获得string中的第一个子串
++
++expr index STRING CAHRS #字符串在确定字符中第一次出现的位置
++
++##从中目录中提取出用户名
++echo $HOME
++
++#打印用户主目录中第七个字符开始的7个长度的字符
++expr substr $HOME
++
++
+diff --git a/capters5/2-4.sh b/capters5/2-4.sh
+new file mode 100755
+index 0000000..efd8824
+--- /dev/null
++++ b/capters5/2-4.sh
+@@ -0,0 +1,5 @@
++#!/usr/bin/env bash
++
++#使用column命令格式化数据,并生成一个整齐的表格
++#使用()把printf命令和ls -l命令的输出数据合并为一个整体(sed后跟的是1  而不是 l )
++( printf "PERMISSIONS LINKS OWNER GROUP SIZE DATE HH:MM FILE-NAME\n";ls -l|sed 1d )|column -t
+\ No newline at end of file
+diff --git a/capters5/2-test.sh b/capters5/2-test.sh
+new file mode 100755
+index 0000000..66ad7d3
+--- /dev/null
++++ b/capters5/2-test.sh
+@@ -0,0 +1,6 @@
++#!/usr/bin/env bash
++
++str = "just test"
++#echo ${#str}
++#expr length $str
++expr index "$str" MAH
+\ No newline at end of file
+diff --git a/capters5/2.sh b/capters5/2.sh
+new file mode 100755
+index 0000000..61d7bc4
+--- /dev/null
++++ b/capters5/2.sh
+@@ -0,0 +1,22 @@
++#!/usr/bin/env bash
++
++#解决跨平台时的换行符不同的问题(unix系统也可以安装)
++#在ubuntu linux中,可以安装tofrodos包,使用其中的formdos命令和todos命令来转换文本文件
++
++#在命令行中执行
++file name.txt   #得到name.txt: ASCII text
++
++#把文件转换成windows格式的文本文件以crlf作为行结束符
++todos name.txt
++
++#查看文件格式,windows格式的文本以CRLF作为行结束符
++file name.txt #得到 ASCII Eglish Teat,with CRLF line terminators
++
++#使用fromdoc把文件从win格式转为unix格式
++fromdos name.txt
++
++#检测文件格式,可以看到1已被转换为unix格式
++file name.txt
++
++
++
+diff --git a/capters5/3.txt b/capters5/3.txt
+new file mode 100755
+index 0000000..5703e4b
+--- /dev/null
++++ b/capters5/3.txt
+@@ -0,0 +1,11 @@
++##知识点
++(1) 如何使用cut 删除无用数据
++(2) 对数据中的行进行排序
++(3) 用sort对数字排序
++(4) 如何合并重复的数据行
++(5) 统计出重复的数据行出现的次数
++(6) 合并多个文件
++(7) 用tr命令进行字符串的转换
++(8) 用tr命令进行字符串转换时,指定字符集
++(9) 跨平台时,换行标志如何正常显示
++(10)获取字符串的长度
+diff --git a/capters5/name.txt b/capters5/name.txt
+new file mode 100755
+index 0000000..8089de2
+--- /dev/null
++++ b/capters5/name.txt
+@@ -0,0 +1,7 @@
++t1
++t2
++t3   tettet
++ttttest
++
++test
++test
+\ No newline at end of file
+diff --git a/capters5/t.sh b/capters5/t.sh
+new file mode 100755
+index 0000000..e5d2408
+--- /dev/null
++++ b/capters5/t.sh
+@@ -0,0 +1,2 @@
++#!/usr/bin/env bash
++$* | sort
+\ No newline at end of file
+diff --git a/capters5/tel.txt b/capters5/tel.txt
+new file mode 100755
+index 0000000..dcf37cd
+--- /dev/null
++++ b/capters5/tel.txt
+@@ -0,0 +1,3 @@
++2
++3
++4
+diff --git a/capters5/test2.sh b/capters5/test2.sh
+new file mode 100755
+index 0000000..d19ce4a
+--- /dev/null
++++ b/capters5/test2.sh
+@@ -0,0 +1,9 @@
++#!/usr/bin/env bash
++echo ${#}
++echo $#
++echo $*
++echo $?
++echo $0
++for i in $* ;do
++      echo $i
++done
+\ No newline at end of file
+diff --git a/capters5/testif.sh b/capters5/testif.sh
+new file mode 100755
+index 0000000..e911929
+--- /dev/null
++++ b/capters5/testif.sh
+@@ -0,0 +1,10 @@
++#!/usr/bin/env bash
++
++ #测试文件是否存在
++ for file in [1-8].sh                        #for将读取test1-test8，后缀为.sh的文件
++    do
++        if [ -f $file ]                              #判断文件在当前目录是否存在。
++        then
++            echo "$file exists."
++        fi
++    done
+\ No newline at end of file
+diff --git a/capters6/1-2.sh b/capters6/1-2.sh
+new file mode 100755
+index 0000000..a4bcd27
+--- /dev/null
++++ b/capters6/1-2.sh
+@@ -0,0 +1,34 @@
++#!/usr/bin/env bash
++
++#获取用户输入的变量
++echo
++read -p "Please input your name : " NAME  #read从键盘读入,-p指定提示信息
++
++echo -e "Welcome,$NAME!\n Your name is saved as 'NAME'!"
++
++echo "------------------------"
++echo
++echo "Clear variable 'NAME' using 'unset' command"
++
++#清除变量的值
++unset NAME
++echo
++echo "Now variable 'NAME' is : "
++
++#判断变量是否被清除
++if [ -z $NAME ]
++then
++      echo
++      echo "NAME : $NAME"
++      echo "Variable NAME is null"
++else
++      echo
++      echo "NAME: $NAME"
++      echo "Variable NAME is not null"
++fi
++
++echo
++echo "quit"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters6/1-3.sh b/capters6/1-3.sh
+new file mode 100755
+index 0000000..5740055
+--- /dev/null
++++ b/capters6/1-3.sh
+@@ -0,0 +1,19 @@
++#!/usr/bin/env bash
++
++#定义只读变量,防止外部误操作
++VERSION 2.0
++#声明version是一个只读变量
++readonly VERSION
++echo
++echo -e "Defined readonly variable :\n VERSION=$VERSION"
++echo
++
++#尝试修改一个只读变量会失败
++echo "Try to modify readonly variable VERSION"
++VERSION=3.0
++echo
++echo -e "Readonly variable VERSION doesn't change \n VERSION=$VERSION "
++
++unset VERSION
++echo  "can't unset a readonly variable"
++
+diff --git a/capters6/1.sh b/capters6/1.sh
+new file mode 100755
+index 0000000..36008c8
+--- /dev/null
++++ b/capters6/1.sh
+@@ -0,0 +1,21 @@
++#!/usr/bin/env bash
++
++#统计计算机软硬件信息，并保存到shell脚本中
++
++#使用变量替换定义若干个变量
++TIME=`date`
++NAME=`uname -n`
++KERNEL=`uname -s`
++VERSION=`uname -r`
++ARCH=`uname -m`
++OS=`uname -o`
++
++echo
++echo "Info about your computer"
++echo "=============================="
++echo "Current Time : $TIME"
++echo "Host Name : $NAME"
++echo "Operation System : $ARCH"
++echo "Kernel Version : $KERNEL $VERSION"
++echo
++exit 0
+\ No newline at end of file
+diff --git a/capters6/2.sh b/capters6/2.sh
+new file mode 100755
+index 0000000..e24cd13
+--- /dev/null
++++ b/capters6/2.sh
+@@ -0,0 +1,71 @@
++#!/usr/bin/env bash
++
++##数组变量
++
++#数组元素从0开始
++index=0  #赋值运算的两边不能有空格
++
++#从passwd文件中取出所有用户
++#指定分隔符为冒号,使用cut从passwd文件的每一行中提取出用户名
++for i in `cut -f 1 -d":" /etc/passwd`
++do
++     #把每一个用户的用户名赋值给user数组的元素
++     user[$index]=$i
++     #每赋值一个用户之后把索引加1
++     let index=$index+1
++done
++
++#重复使用变量index作为行号
++index=1
++
++#使用字符@分割所有的数组元素
++#如果没有使用双引号引用,使用${user[*]}也可以
++for name in "${user[@]}"
++  ##在使用""时,${user[@]}和${user[*]}的区别是
++  ## * 在扩展以后得到的所有元素是一个整体
++  ## @ 在扩展以后得到的是一个分散的列表
++  ## 去掉"" 两者是一样的
++do
++      echo "$index:$name"
++      #行号加1
++      let index=$index+1
++done
++
++echo "---------------------"
++echo "Print all users in one line"
++echo  #空的echo会输出空行
++echo
++
++#把所有的元素作为一个整体进行打印
++echo "${user[*]}"
++
++#把数组元素作为单个的个体进行打印
++echo ${user[@]}
++echo ${user[*]}
++echo
++
++echo "------------------------"
++
++#对数组元素重新赋值,前50个元素会丢失
++#即使没有明确的覆盖他们
++echo "Reassign the user array,the user names will lost"
++user=([50]=zhangze,test,tt)
++echo
++echo ${user[*]}
++echo ${user[3]}
++##TODO:引用数组时,如果没有{},
++# 得到的是数组的第一个元素的值后边在加上[3]因为shell在遇到$之后会寻找后边的变量名
++#一旦找到就会用它的值替换$user,因此$user[3]就变成root[3],而不是user的第四个元素
++echo
++
++#unset array[136] ## 删除数组中的一个元素,其它的元素仍会存在
++
++
++##下边三个是删除所有的元素
++unset array
++unset array[@]
++#unset array[*]
++echo ${user[*]}
++
++
++exit 0
+\ No newline at end of file
+diff --git a/capters6/3.sh b/capters6/3.sh
+new file mode 100755
+index 0000000..8c33e97
+--- /dev/null
++++ b/capters6/3.sh
+@@ -0,0 +1,36 @@
++#!/usr/bin/env bash
++
++#环境变量会被传递到子进程,本地变量不会
++##在shell中创建环境变量,使子进程访问
++
++#检查是否指定了命令行选项 --export
++
++if [ "$1" = "--export" ]
++then
++      #在父进程中定义全局变量
++       export LOCATION=USA
++elif [ "$1" = "--no-export" ]
++then
++     #在父进程中定义一个本地变量
++     LOCATION=USA
++else
++    #显示脚本的使用方法
++    echo -e "`basename $0` --export\textport parent process's variable to child process"
++    echo -e "`basename $0` --no-export\dont export parent prcess's variable to child process"
++    echo
++    exit 0
++fi
++
++echo
++echo "Your parent is at '$LOCATION'"
++
++#创建子进程,子进程是否能够得到LOCATION的变量拷贝依赖于export关键字
++sh ./child.sh
++
++#子进程退出,父进程继续执行
++echo
++echo -e "Your parent is at '$LOCATION'"
++echo -e "Child process and parent process have different LOCATION"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters6/4.sh b/capters6/4.sh
+new file mode 100755
+index 0000000..7842841
+--- /dev/null
++++ b/capters6/4.sh
+@@ -0,0 +1,69 @@
++#!/usr/bin/env bash
++
++#shell变量
++
++#如何知道当前用户的主目录,当前所使用的shell的可执行文件,当前的登陆用户名,uid,当前bash的版本好,当前工作目录
++#前一个工作目录,当前脚本的运行时间,当前shell是第几层子进程,到那些目录中搜索可执行程序?
++
++#主目录
++echo -e "HOME Directory:\t\t$HOME"
++
++#当前shell
++echo -e "Current Shell:\t\t$SHELL"
++
++#登录名
++echo -e "User Name:\t\t$USER"
++
++#登陆用户ID
++echo -e "User Id:\t\t$UID"
++
++#当前bash版本
++echo  -e "Bash Version:\t\t\t$BASH_VERSION"
++
++#当前工作目录
++echo -e "Current Directory:\t\t$PWD"
++
++#修改当前工作目录到主目录
++echo
++echo "--------Change Current Directory to '$HOME'------"
++cd
++echo -e  "Current Directory:\t\t$PWD"
++
++#之前的的工作目录
++echo -e "Previous Working Directory:\t\t$OLDPWD"
++echo
++
++#睡眠10秒
++echo "**** will sleep 10 s ******"
++#sleep 10
++
++#从脚本执行到现在一共多长时间
++echo -e "Seconds since invoked:\t\t$SECONDS s"
++
++#打印bash级别
++echo -e "Bash Level:\t\t$SHLVL"
++
++#打印是个随机数
++echo -en "10 Random Numbers:\t\t"
++
++i=10
++until [ $i -lt 1 ]
++do
++      echo -n "$RANDOM"
++      let i=$i-1
++done
++
++echo
++echo
++
++#修改内部字段分隔符IFS为横杠
++echo "-------- Change \$IFS to '_' ---------"
++IFS=-  ##按照分隔符进行分割
++echo "'2012-11-11' will be retreated as 3 strings:"
++DATE=2012-11-11
++printf "%s\n" $DATE
++
++echo
++echo -e "Command Serch In:\t\t$PATH"
++
++exit 0
+diff --git a/capters6/5-2.sh b/capters6/5-2.sh
+new file mode 100755
+index 0000000..54ea4e1
+--- /dev/null
++++ b/capters6/5-2.sh
+@@ -0,0 +1,39 @@
++#!/usr/bin/env bash
++
++#如果用户每次输入的参数个数是不确定的,怎么操作变量 ?
++
++#用$#来获得变量个数
++#使用if [ -z $1 ] 也可以达到相同的效果
++#read -p "test : "
++#echo $*
++#shift
++#echo $*
++#exit 0
++if [ $# -eq 0 ]
++then
++        echo
++        echo "Usage:`basename $0` [filename] "
++        echo "At least specify one filename to remove execute permission for group and others"
++        echo
++        exit 0
++fi
++
++echo 
++
++#检查是否有其它的参数
++#使用until [ -z $1 ]可以达到相同的效果
++ while [ $# -gt 0 ]
++ do
++       echo "Processiong file '$1'."
++       chmod go+x $1
++
++       #删除第一个参数
++       shift  ##shift默认从参数列表删除第一个参数
++              # 如果指定参数n shift可以一次删除多个参数
++              # shift n 删除前n个  shift $#删除全部
++              # shift$(($#-3))删除除最后3个参数之外的参数
++ done
++
++ echo "done"
++ echo
++ exit 0
+\ No newline at end of file
+diff --git a/capters6/5-3.sh b/capters6/5-3.sh
+new file mode 100755
+index 0000000..8ca00d3
+--- /dev/null
++++ b/capters6/5-3.sh
+@@ -0,0 +1,40 @@
++#!/usr/bin/env bash
++
++##使用$# 或者 $*来获取整个参数列表
++#使用if [ -z $1 ]也可以达到相同的效果
++if [ $# -eq 0 ]
++then
++       echo
++       echo "Usage: `basename $0` [filename]"
++       echo "At Least specify one filename to remove execute permisson for group and others"
++       echo
++       exit 1
++fi
++
++echo
++echo "Your specified the following parameters:"
++echo "<< $* >>"
++echo
++
++#遍历所有的参数
++#for PAPAMETER in "$@"
++#do
++#       echo "Processing file '$PAPAMETER'"
++#       #删除权限
++#       chmod go-x $PAPAMETER
++#done
++
++##循环的过程也可以使用while
++
++exit 0
++while [ "$*"!="" ]
++do
++      echo "Processing file '$PAPAMETER'"
++      chmod go-x $PAPAMETER
++      shift
++done
++
++echo "Done"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters6/5-4.sh b/capters6/5-4.sh
+new file mode 100755
+index 0000000..1f9481b
+--- /dev/null
++++ b/capters6/5-4.sh
+@@ -0,0 +1,56 @@
++#!/usr/bin/env bash
++
++##根据上一条命令是否执行成功,进入不同的分支
++# 使用$$  $? 来判断
++NEWDIR=~/www/shell/capters6/newdir
++NEWFILE=newfile
++
++#指定log文件为test.log
++LOGFILE=`basename $0 .sh`.$$.log ## $$当前进程号
++
++#在当前目录下创建目录
++mkdir $NEWDIR
++
++if [ $? -eq 0 ]
++then
++
++         #成功创建log目录
++         echo "Creating Directory '$NEWDIR' succeed"
++         #在log目录中创建log文件
++         echo "Creating Directory '$NEWDIR' succeed">>$NEWDIR/$LOGFILE
++
++         #改变当前工作目录为newdir
++         cd $NEWDIR
++
++         if [ $? -eq 0 ]
++         then
++               echo "`date`: Changing Current Directory to '$NEWDIR' success"
++               #当前工作目录改变,所以使用OLDPWD
++               echo "`date`: Changing Current Directory to '$NEWDIR' success">>$NEWDIR/$LOGFILE
++
++               #然后创建一个新的文件
++               touch $NEWDIR/$LOGFILE
++               if [ $? -eq 0 ]
++               then
++                       echo "`date`: Creating new file in directory '$NEWDIR' success"
++                       echo "`date`: Creating new file in directory '$NEWDIR' success">>$NEWDIR/$LOGFILE
++               else
++                       # $? !=0 意味这失败
++                       echo "`date`: Creating new file in directory '$NEWDIR' fail"
++                       echo "`date`: Creating new file in directory '$NEWDIR' fail">>$OLDPWD/$LOGFILE
++               fi
++         else
++        echo "`date:` Changing Current Directory to '$NEWDIR' fail"
++        #当前工作目录改变,因此使用OLDPWD
++        echo "`date:` Changing Current Directory to '$NEWDIR' fail">>$OLDPWD/$LOGFILE
++        fi
++else
++       echo "`date:` Changing Current Directory to '$NEWDIR' fail"
++        #当前工作目录改变,因此使用OLDPWD
++       echo "`date:` Changing Current Directory to '$NEWDIR' fail">>$OLDPWD/$LOGFILE
++fi
++
++echo "Please check log file $LOGFILE"
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters6/5.sh b/capters6/5.sh
+new file mode 100755
+index 0000000..4872844
+--- /dev/null
++++ b/capters6/5.sh
+@@ -0,0 +1,41 @@
++#!/bin/bash
++
++##在脚本件传值,且不使用环境变量,以免增加文件耦合度
++# 特殊变量,位置变量
++
++#检查是否制定了参数
++if [ -n "$1" ]
++then
++      echo
++      #显示脚本名称以及如何调用
++      echo -e "Script Name:\t\t$1"
++      echo -e "How Script is in vokeed:\t\t$0 $1"
++
++      #显示指定参数
++
++      echo -e "The first parameter:\t\t$1"
++
++       #只有文件存在,我们才能显示它的内容
++       if [ -f "$1" ]
++        then
++               echo
++               echo "The content of file '$1'"
++               echo "------------------------"
++               #显示命令行指定的参数文件的内容
++               echo "`cat $1`"
++               echo "-------------------------"
++        else
++               echo "File $1 is not exists"
++               exit 1
++        fi
++else
++        #如果没有指定参数,显示帮助信息
++        echo
++        echo "Show the content of a file "
++        echo
++        echo "Usage:"
++        echo "`basename $0`[filename]"
++fi
++
++echo
++exit 0
+diff --git a/capters6/6.txt b/capters6/6.txt
+new file mode 100755
+index 0000000..6c3ed0e
+--- /dev/null
++++ b/capters6/6.txt
+@@ -0,0 +1,10 @@
++##总结
++(1) 如何定义变量,引用变量的值
++(2) 如何定义只读变量和只读数组
++(3) 数组的定义,访问以及其它的使用方法
++(4) 如何使用只读属性变量和数组的值
++(5) 环境变量和本地变量
++(6) 如何定义环境变量及环境变量在父子进程的独立性
++(7) 常用的shell变量的作用,如$HOME,$SHLVL,$PWD,$SECONDS,$SHELL,$USER,$PATH,$UID
++(8) 如何灵活的处理执行脚本时命令的指定参数
++(9) 特殊变量$$,$?,$@,$*的用法
+\ No newline at end of file
+diff --git a/capters6/child.sh b/capters6/child.sh
+new file mode 100755
+index 0000000..3f92080
+--- /dev/null
++++ b/capters6/child.sh
+@@ -0,0 +1,15 @@
++#!/usr/bin/env bash
++
++#检查子进程中是否有父进程中变量LOCATION的拷贝
++echo "----------------------"
++echo "The child is at '${LOCATION:-somewhere not defined}'"
++
++#如果子进程中拥有变量LOCATION的拷贝,就修改它,如果没有,就定义
++LOCATION=CHINA #在子进程中修改变量的值不会影响父进程
++
++#访问子进程中的变量location
++echo
++echo "The child is at '$LOCATION'"
++echo "-------------------------"
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/1-2.sh b/capters7/1-2.sh
+new file mode 100755
+index 0000000..00526d6
+--- /dev/null
++++ b/capters7/1-2.sh
+@@ -0,0 +1,55 @@
++#!/usr/bin/env bash
++
++##为程序编写安装脚本
++# 得到当前的操作平台
++PLATFORM=`uname -s`
++
++#为各种操作系统定义相应的空变量
++FREEBSD=
++SUNOS=
++MAC=
++AIX=
++MINIX=
++LINUX=
++
++echo
++echo "Identifying the platform on which this installer is running on..."
++echo
++
++# 依平台进行测试
++if [ "$PLATFORM" = "FreeBSD" ]
++then
++       echo "This is FreeBSD system"
++       #如果测试为真,给相应的操作系统变量赋值为1
++       FREEBSD=1
++       ##如果前边的if条件不满足,继续进行elif中语句的测试
++       #后边以此类推
++elif [ "$PLATFORM" = "SunOS" ]
++then
++        echo "This is Solaris system"
++        #如果测试为真,给相应的操作系统变量赋值为1
++        SUNOS=1
++elif [ "$PLATFORM" = "Darwin" ]
++then
++        echo "This is MAC  OSX system"
++        MAC=1
++elif [ "$PLATFORM" = "MINIX" ]
++then
++        echo "This is MINIX  system"
++        MINIX=1
++elif [ "$PLATFORM" = "Linux" ]
++then
++        echo "This is Linux  system"
++        LINUX=1
++else
++        echo "Failed to identify this operator system,Abort"
++        exit 1
++fi
++
++echo "Starting to install the software..."
++echo
++
++##后边的安装脚本可以检查各个操作系统的系统变量的值石佛欧为1
++#以此来执行各种不同的操作
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/1.sh b/capters7/1.sh
+new file mode 100755
+index 0000000..28ab8e8
+--- /dev/null
++++ b/capters7/1.sh
+@@ -0,0 +1,23 @@
++#!/usr/bin/env bash
++
++## if else分支与特殊变量$#结合,实现检测入参的需求
++#检测脚本执行时命令行的参数个数
++
++if [ $# -lt 2 ]
++then
++      #参数个数小于2,脚本退出
++      echo "Error! Paramter count wrong"
++      echo "Usage:$0 operator file"
++      exit 1
++elif [ $# -gt 2 ]
++then
++      #参数个数大于2,脚本退出执行
++       echo "Error ! Paramter too many!"
++       echo "Usage:$0 oprater file"
++       exit 1
++fi
++
++#执行到这里,说明正确传入两个参数
++echo "My Script begins running"
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/10.txt b/capters7/10.txt
+new file mode 100755
+index 0000000..ec01d46
+--- /dev/null
++++ b/capters7/10.txt
+@@ -0,0 +1,9 @@
++##总结
++(1) 通过使用if/elif/else语句构建分支结构,如何判断命令行是否正确指定
++(2) 使用case构建多分支结构
++(3) while循环语句的用法
++(4) until语句的用法及与while循环的区别
++(5) 对大量文件执行重复操作时,使用for语句遍历文件列表的方法
++(6) 通过select快速创建菜单
++(7) 在循环体结构中,如何使用break
++(8) 循环结构中continue的使用
+diff --git a/capters7/2.sh b/capters7/2.sh
+new file mode 100755
+index 0000000..a79f6f8
+--- /dev/null
++++ b/capters7/2.sh
+@@ -0,0 +1,81 @@
++#!/usr/bin/env bash
++
++##case分支结构
++#清屏
++clear
++
++#显示菜单项,从而是用户可以选择所期望的操作
++echo "           File Operation List"
++echo "           -------------------"
++
++echo " Choose one of the following operations:"
++echo
++
++echo "[o]pen File"
++echo "[D]elete File"
++echo "[R]ename File"
++echo "[M]ove File"
++echo "[C]opy File"
++echo "[P]aste File"
++echo
++
++#等待用户输入
++echo -n "Please enter your operation:"
++read operation
++
++#根据用户的输入操作执行相应的操作
++case "$operation" in
++#同时接受大小写字母
++"O"|"o")   ## ;; / ;& /;;&三种结束子句的方式
++        #用户选择了打开文件的操作
++        echo
++        echo "Opening File..."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"D"|"d")
++        #用户选择了打开文件的操作
++        echo
++        echo "Deleting File..."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"R"|"r")
++        #用户选择了打开文件的操作
++        echo
++        echo "Rename File..."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"O"|"o")
++        #用户选择了打开文件的操作
++        echo
++        echo "Opening File..."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"M"|"m")
++        #用户选择了打开文件的操作
++        echo
++        echo "Moving File1 to File2"
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"C"|"c")
++        #用户选择了打开文件的操作
++        echo
++        echo "Copying File1 to File2."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++"P"|"p")
++        #用户选择了打开文件的操作
++        echo
++        echo "Paste File..."
++        echo "Successed!"
++        ;;  #note double semicolon to terminate each option
++*)
++        #用户的输入不匹配任何操作,以错误状态1退出脚本
++        echo
++        echo "Error ,Unknown operator"
++        echo "Progarm exit"
++        ;;
++esac
++
++echo
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/3.sh b/capters7/3.sh
+new file mode 100755
+index 0000000..f13c646
+--- /dev/null
++++ b/capters7/3.sh
+@@ -0,0 +1,35 @@
++#!/usr/bin/env bash
++
++#while
++#定义要测试的网络
++NETWORK=192.168.1
++
++#定义检测的起始地址
++IP=30
++
++#只要IP地址小于130,循环体会被执行
++while [ "$IP" -lt "130" ]
++do
++      echo -en "Pinging ${NETWORK}.${IP}..."
++      #变量NETWORK和IP组合在一起构成IP地址
++      #执行命令ping检测IP地址的连通,所以,并不显示任何输出
++      ping -c1 -w1 ${NETWORK}.${IP}>/dev/null 2>&1
++      ## -c1是发送一个echo_requst包
++      ## -w1是指定每次ping的时间1s,无论是否收到回包都要停止执行、
++      #   0代表成功收包,通信成功 其它代表通信失败
++
++
++      #根据命令的ping的退出状态值是否为0,判断网络是否联通
++      if [ "$?" -eq 0 ]
++      then
++            #如果ping的结果退出状态等一0,打印ok
++             echo "OK"
++       else
++              echo "Filed"
++       fi
++
++       #IP地址加1
++       let IP=$IP+1
++done
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/4.sh b/capters7/4.sh
+new file mode 100755
+index 0000000..5e3a9aa
+--- /dev/null
++++ b/capters7/4.sh
+@@ -0,0 +1,33 @@
++#!/usr/bin/env bash
++
++##until循环,一直循环,直到满足退出条件
++
++QUIT_COMMAND=quit
++
++#直到用户输入的字符串是quit时,until循环退出
++until [ "$USER_IPUT" = "$QUIT_COMMAND" ]
++do
++       echo "Please input command:"
++       echo "(type command $QUIT_COMMAND to exit)"
++       read USER_IPUT
++       echo
++       echo ">>your command is $USER_IPUT"
++
++       # 对用户的输入进行匹配
++       case $USER_IPUT in
++               "open")
++                       echo ">>opening..."
++                       ;;
++               "closing")
++                       echo ">>closing....."
++                       ;;
++               *)
++                       echo "Known command"
++                       ;;
++       esac
++       echo
++done
++
++echo "Bye"
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/5.sh b/capters7/5.sh
+new file mode 100755
+index 0000000..7c86cd1
+--- /dev/null
++++ b/capters7/5.sh
+@@ -0,0 +1,28 @@
++#!/usr/bin/env bash
++
++#for实现,更改文件目录并为每一个文件名添加前缀
++#在主目录下创建测试目录
++mkdir ${HOME}/aaa>./error.log 2>&1
++
++#如果创建失败
++if [ $? -ne 0 ]
++then
++        echo "Directory ${HOME}/aaa has already exists"
++        echo "Do Nothing,Abort!"
++        exit 1
++else
++        echo "Create directory ${HOME}/aaa"
++fi
++
++echo "cp *.sh files into diractory ${HOME}/aaa,and prefix \"test_\" before each filenam"
++
++#遍历当前目录下的所有txt文件
++for FILE in `ls -1 *.txt` ##这里是1不是l,意思是每一行的文件名都在同一行显示
++do
++        #把文件复制到刚刚创建的目录下,并且重命名为test_*
++        cp $FILE ${HOME}/aaa/test_$FILE
++        #为每一个文件添加可执行权限
++        chmod -x ${HOME}/aaa/test_$FILE
++done
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/6-2.sh b/capters7/6-2.sh
+new file mode 100755
+index 0000000..4d91ac9
+--- /dev/null
++++ b/capters7/6-2.sh
+@@ -0,0 +1,44 @@
++#!/usr/bin/env bash
++
++##--------未测试通过--------
++#通过switch实现更简单的菜单选择
++echo
++echo "Which directory do you want to list:"
++echo "(Press \"Enter\" directory to show menu again)"
++echo
++
++#把要显示的菜单项写在in后边的列表里
++select dir in /bin/ /usr/bin/ /usr/local/bin/ /sbin/ /usr/sbin/ /usr/local/sbin/ /usr/share/ quit
++do
++        case $dir in
++        quit )
++            #如果用户选择quit,退出脚本
++            echo
++            echo "You entered quit , Bye"
++            break
++            ;;
++        /* )
++            #匹配选择目录,$dir以/开头说明用户选择了某一个目录
++            echo
++            echo "You selected directory \"$dir\",it contains folling lines"
++            echo
++
++            #显示所选目录下的内容
++            ls -l $dir
++            ;;
++        * )
++            #匹配其它所有的输入
++            echo
++            echo "Errot,invalid selection \"$REPLY\",choose again"
++            ;;
++        esac
++
++        echo
++        echo "Which directory do you want to list:"
++        echo $dir
++        echo "(Press \"Enter\" directory to show menu again)"
++        echo
++
++done
++
++exit 0
+\ No newline at end of file
+diff --git a/capters7/6.sh b/capters7/6.sh
+new file mode 100755
+index 0000000..e266d70
+--- /dev/null
++++ b/capters7/6.sh
+@@ -0,0 +1,41 @@
++#!/usr/bin/env bash
++
++####-----未测试通过-------
++##select循环,快速创建菜单
++
++ echo
++ echo "Which directory do you want to list:"
++ echo "(Press \"Enter\" directory to show menu again)"
++ echo
++
++ #把要显示的菜单项写在in后边的列表里
++select dir in /bin/ /usr/bin/ /usr/local/bin/ /sbin/ /usr/sbin/ /usr/local/sbin/
++do
++        if [ !-z $dir ]
++        then
++                if [ $dir = $quit ];
++                then
++                        #如果用户选择quit,退出脚本
++                        echo "You entered quit , Bye"
++                        break;
++                else
++                        #用户选择了一个目录
++                        echo $dir
++                        echo
++                        echo "You selected directory \"$dir\",it contains folling lines"
++                        echo
++
++                        #显示所选目录下的内容
++                         ls -l $dir
++                fi
++        else
++                echo
++                echo "Errot,invalid selection \"$REPLY\",choose again"
++        fi
++
++        echo
++        echo "Which diretory do you want to list:"
++        echo "(Press \"Enter\" directory to show menu again)"
++done
++
++exit 0
+diff --git a/capters7/7.sh b/capters7/7.sh
+new file mode 100755
+index 0000000..e6a4fce
+--- /dev/null
++++ b/capters7/7.sh
+@@ -0,0 +1,49 @@
++#!/usr/bin/env bash
++
++##嵌套循环
++#备份文件,保持原有目录结构
++
++echo
++echo "Backup Files"
++echo "------------"
++
++#遍历上级目录,备份其中文件
++for DIR in ../log/*
++do
++       #检测文件是否存在
++       if [ -d ${DIR} ]
++       then
++               #从路径中提取出最后的目录名
++               basedir=`basename "${DIR}"`
++               echo
++               echo "create directory ${HOME}/www/shell/backup/${basedir}"
++               echo "---------------------"
++               echo
++
++               #创建备份目录
++               mkdir -p ${HOME}/www/shell/backup/${basedir}
++               if [ $? -eq 0 ]
++               then
++                       #这里可以指定希望备份的文件类型,extension取出文件扩展名
++                       for extension in sh c txt
++                       do
++                               #备份文件
++                               echo -n "Backup \"${DIR}/*.${extension}\" to "
++                               echo "\"${HOME}/www/shell/backup/${basedir}\" "
++                               cp ${DIR}/*.${extension}  ${HOME}/www/shell/backup/${basedir}
++                               echo "Done"
++                       done
++               else
++                       echo
++                       echo "> Backup directory \"${HOME}/www/shell/backup/${basedir}\" can not be create"
++                       exit "> quit this backup programe"
++                       exit 1
++               fi
++       else
++               #如果DIR不是一个目录,跳过不处理
++               echo
++               echo "> \"$DIR\" is not a directory,skip it!"
++               continue
++       fi
++
++done
+\ No newline at end of file
+diff --git a/capters7/8.sh b/capters7/8.sh
+new file mode 100755
+index 0000000..64bbe11
+--- /dev/null
++++ b/capters7/8.sh
+@@ -0,0 +1,62 @@
++#!/usr/bin/env bash
++
++##break
++#备份文件,保持原有目录结构
++
++echo
++echo "Backup Files"
++echo "------------"
++
++#遍历上级目录,备份其中文件
++for DIR in ../log/*
++do
++       #检测文件是否存在
++       if [ -d ${DIR} ]
++       then
++               #从路径中提取出最后的目录名
++               basedir=`basename "${DIR}"`
++               echo
++               echo "create directory ${HOME}/www/shell/backup/${basedir}"
++               echo "---------------------"
++               echo
++
++               #创建备份目录
++               mkdir -p ${HOME}/www/shell/backup/${basedir}
++               if [ $? -eq 0 ]
++               then
++                       #这里可以指定希望备份的文件类型,extension取出文件扩展名
++                       for extension in sh  txt
++                       do
++                               #备份文件
++                               echo -n "Backup \"${DIR}/*.${extension}\" to "
++                               echo "\"${HOME}/www/shell/backup/${basedir}\" "
++                               cp ${DIR}/*.${extension}  ${HOME}/www/shell/backup/${basedir}
++
++
++                               #如果备份失败
++                               if [ $? -ne 0 ]
++                               then
++                                       echo
++                                       echo "Error when copying \"${DIR}/*.${extension}\""
++                                       echo ">Stop backing files of the orther directories"
++                                       echo
++                                       #退出2层循环
++                                       break 2;
++                               fi
++
++                               echo "Done"
++                       done
++               else
++                       echo
++                       echo "> Backup directory \"${HOME}/www/shell/backup/${basedir}\" can not be create"
++                       exit "> quit this backup programe"
++                       exit 1
++               fi
++       else
++               #如果DIR不是一个目录,跳过不处理
++               echo
++               echo "> \"$DIR\" is not a directory,skip it!"
++               continue
++       fi
++
++done
+\ No newline at end of file
+diff --git a/capters7/9.sh b/capters7/9.sh
+new file mode 100755
+index 0000000..abc4e34
+--- /dev/null
++++ b/capters7/9.sh
+@@ -0,0 +1,62 @@
++#!/usr/bin/env bash
++
++##continue
++#备份文件,保持原有目录结构
++
++echo
++echo "Backup Files"
++echo "------------"
++
++#遍历上级目录,备份其中文件
++for DIR in ../log/*
++do
++       #检测文件是否存在
++       if [ -d ${DIR} ]
++       then
++               #从路径中提取出最后的目录名
++               basedir=`basename "${DIR}"`
++               echo
++               echo "create directory ${HOME}/www/shell/backup/${basedir}"
++               echo "---------------------"
++               echo
++
++               #创建备份目录
++               mkdir -p ${HOME}/www/shell/backup/${basedir}
++               if [ $? -eq 0 ]
++               then
++                       #这里可以指定希望备份的文件类型,extension取出文件扩展名
++                       for extension in sh  txt
++                       do
++                               #备份文件
++                               echo -n "Backup \"${DIR}/*.${extension}\" to "
++                               echo "\"${HOME}/www/shell/backup/${basedir}\" "
++                               cp ${DIR}/*.${extension}  ${HOME}/www/shell/backup/${basedir}
++
++
++                               #如果备份失败
++                               if [ $? -ne 0 ]
++                               then
++                                       echo
++                                       echo "Error when copying \"${DIR}/*.${extension}\""
++                                       echo ">Stop backing files of the orther directories"
++                                       echo
++                                       #退出2层循环
++                                       continue 2;
++                               fi
++
++                               echo "Done"
++                       done
++               else
++                       echo
++                       echo "> Backup directory \"${HOME}/www/shell/backup/${basedir}\" can not be create"
++                       exit "> quit this backup programe"
++                       exit 1
++               fi
++       else
++               #如果DIR不是一个目录,跳过不处理
++               echo
++               echo "> \"$DIR\" is not a directory,skip it!"
++               continue
++       fi
++
++done
+\ No newline at end of file
+diff --git a/capters7/eee.txt b/capters7/eee.txt
+new file mode 100755
+index 0000000..a90e96d
+--- /dev/null
++++ b/capters7/eee.txt
+@@ -0,0 +1 @@
++eeee
+\ No newline at end of file
+diff --git a/capters7/error.log b/capters7/error.log
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters7/wewe.txt b/capters7/wewe.txt
+new file mode 100755
+index 0000000..8877639
+--- /dev/null
++++ b/capters7/wewe.txt
+@@ -0,0 +1 @@
++wwwww
+\ No newline at end of file
+diff --git a/capters8/1.sh b/capters8/1.sh
+new file mode 100755
+index 0000000..2cc75a8
+--- /dev/null
++++ b/capters8/1.sh
+@@ -0,0 +1,94 @@
++#!/usr/bin/env bash
++
++##通过getopts命令进行处理,然后使用变量替换{var:-value},根据用户是否知道
++#了编辑器和显示程序来决定采取什么样的操作
++
++#定义脚本使用函数
++printf "www \c eee"
++echo "www \c eee"
++help()
++{
++        echo
++        echo "Usage:`basename $0` [option] -f File"
++        echo "Edit a Editable File using spacified Editor and Pager"
++        echo
++        echo -e " -e [Editor]\tEditor to edit the file:vim,pico,emacs,nano.."
++        echo -e " -p [Pager]\tPager to view the file:less,more,cat,head.."
++        echo
++        exit 1
++}
++
++#关闭诊断信息
++#OPTERR=0
++#处理命令行选项和参数
++while getopts f:e:p: OPTION  ##这里得到的
++do
++        case "$OPTION" in
++                f)
++                        #每一个选项的参数可以使用$OPTARG来访问
++                        TARGET_FILE="$OPTION";;
++                e)
++                        EDITOR="$OPTION";;
++                P)
++                        PAGER="$OPTION";;
++                \?)
++                        #当遇到未知选项时,显示脚本的使用方法
++                        help;;
++        esac
++done
++
++#文件参数必须设置
++echo $TARGET_FILE
++exit 0
++if [ -z "$TARGET_FILE" ]
++then
++        help
++fi
++
++
++echo
++
++#确保文件是可读写的
++if [ -r "../readme.txt" -a -w "../readme.txt" ]
++then
++       #询问用户是否想要编辑文件
++       read -p "Do you want to Edit File(y/n)?"
++       if [ "$REPLY"='y' -o "$REPLY"='Y' -o "$REPLY"='YES' ]
++       then
++               echo
++               echo "Opening file '$TARGET_FILE' using ${EDITOR:-vim}"
++               sleep 3
++
++               #使用编辑器打开文件,如果变量EDITOR为空
++               ${EDITOR:-vim} "$TARGET_FILE"
++               echo "Thank you for editing the file"
++       fi
++
++       echo
++       #询问用户是否想要查看文件内容
++       read -p "Do you want to see the file just edited(y/n)?"
++       if [ "$REPLY"='y' -o "$REPLY"='Y' -o "$REPLY"='YES' ]
++       then
++               echo
++               echo "Opening file '$TARGET_FILE' using ${PAGER:-less}"
++               sleep 3
++
++               #显示文件内容,如果变量PAGER为空就使用less
++               ${PAGER:-less} "$TARGET_FILE"
++               echo "Thank you for editing the file"
++       fi
++       echo
++       echo "Bye!"
++       echo
++
++
++else
++       echo
++       echo "File $TARGET_FILE can not be accessed,please select a writable and redable file"
++       echo
++       echo "Bye"
++       echo
++       exit 1
++fi
++
++exit 0
+\ No newline at end of file
+diff --git a/capters8/2.sh b/capters8/2.sh
+new file mode 100755
+index 0000000..297cec9
+--- /dev/null
++++ b/capters8/2.sh
+@@ -0,0 +1,67 @@
++#!/usr/bin/env bash
++
++#假如目录中有a.txt   b,txt   c.txt  tmp.1  tmp.2  tmp.3这积累文件
++#根据指示的条件,显示出文件
++#(1) 显示文件名以*。txt结尾的
++#(2) 显示文件名以a或b结尾的
++#(3) 显示文件名不是以a或b结尾的
++#(4) 显示文件名以a b c开头的
++#(5) 以tmp开头,1,3的数字结尾
++
++#临时目录
++ TMPDIR=globbing
++
++ #创建linshimul
++ mkdir $TMPDIR
++
++ cd $TMPDIR
++
++ #创建一些文件来显示通配符匹配
++ touch a.txt  b.txt  c.txt
++
++ count=1
++ while [ "$count" -le 4 ]
++ do
++         touch "tmp.$count"
++         let count+=1
++ done
++
++ echo
++
++ #使用通配符显示文件
++ echo "OUTPUT from ls * :"
++ ls *
++
++##显示文件名以字母a 或 b开头的文件
++ls  [ab]*
++
++##显示文件名不是以字母a 或 b开头的文件
++ echo
++ echo "OUTPUT from ls [^ab]* :"
++ ls  [^ab]*
++ ##一般情况下,通配符*不会匹配隐藏文件,要./[.]bashrc这样用
++
++
++ ##显示文件名不是以字母a 或 b开头的文件
++  echo
++  echo "OUTPUT from ls [!ab]* :"
++  ls  [!ab]*
++
++  ##显示文件名不是以字母a 或 b c开头的文件
++  echo
++  echo "OUTPUT from ls [a-c]* :"
++  ls  [a-c]*
++
++  ##显示文件名不是以字母a 或 b c开头的文件
++  echo
++  echo "OUTPUT from ls tmp.[1-4] :"
++  ls  tmp.[1-4]
++
++  #返回之前的目录
++  cd- >/dev/null
++
++#清除临时目录
++  echo
++  echo "Clean up tempdir..."
++  rm -rf $TMPDIR
++  exit 0
+\ No newline at end of file
+diff --git a/capters8/3.sh b/capters8/3.sh
+new file mode 100755
+index 0000000..df5ae15
+--- /dev/null
++++ b/capters8/3.sh
+@@ -0,0 +1,19 @@
++#!/usr/bin/env bash
++
++#在shell脚本中输出当前的日期,计算并输出今年和明年的年份
++##显示当前日期
++DAY=$(date +%A)
++echo "DATE:`date +%Y-%m-%d`" ##2016-09-23
++echo -n "Today is $DAY"
++
++
++##显示今年和明年
++echo "Next Year will be `expr \`date +%Y\`+1`"
++echo
++echo "Previous year was $(expr $(date +%Y)-1)"
++
++#显示登录用户
++echo -n "Current login users:"
++echo $(who | cut -c1-8|sort -u) #sort -u去掉重复的用户名
++echo
++exit 0
+\ No newline at end of file
+diff --git a/capters8/4.sh b/capters8/4.sh
+new file mode 100755
+index 0000000..0503bc6
+--- /dev/null
++++ b/capters8/4.sh
+@@ -0,0 +1,17 @@
++#!/usr/bin/env bash
++
++#计算距离新年还有多少天
++echo "Today is $(date +%Y-%m-%d)"
++
++#获得今天是这一年的第几天
++DAY=$(date +%j)
++
++#不能在DAY的前边加上$
++echo "There is $(( (365-DAY)/7 )) weeks before New Year"
++
++#在$DAY的两侧要有空格
++echo "Have passed $(expr $DAY/7) weeks in this year"
++
++#let命令的算术表达式不能包含任何空格,并且不会使用计算结果替换表达式
++let weeks=(365-$DAY)/7  ##let表达式要求紧密连接在一起 不能用空格
++echo "There is $weeks weeks before NewYear"
+\ No newline at end of file
+diff --git a/capters8/globbing/a.txt b/capters8/globbing/a.txt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/b.txt b/capters8/globbing/b.txt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/c.txt b/capters8/globbing/c.txt
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/tmp.1 b/capters8/globbing/tmp.1
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/tmp.2 b/capters8/globbing/tmp.2
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/tmp.3 b/capters8/globbing/tmp.3
+new file mode 100755
+index 0000000..e69de29
+diff --git a/capters8/globbing/tmp.4 b/capters8/globbing/tmp.4
+new file mode 100755
+index 0000000..e69de29
+diff --git a/common.sh b/common.sh
+old mode 100644
+new mode 100755
+index 212c4ba..540a26e
+--- a/common.sh
++++ b/common.sh
+@@ -1 +1,3 @@
+-#!/usr/bin/env bash
+\ No newline at end of file
++#!/usr/bin/env bash
++grep char *.* #在所有的文件中查找字符char
++find . -name filename #在文件系统中查找文件
+\ No newline at end of file
+diff --git a/demo/logRotate.sh b/demo/logRotate.sh
+new file mode 100755
+index 0000000..e0d88da
+--- /dev/null
++++ b/demo/logRotate.sh
+@@ -0,0 +1,3 @@
++#!/usr/bin/env bash
++
++mysql=
+\ No newline at end of file
+diff --git a/demo/mysql.sh b/demo/mysql.sh
+new file mode 100755
+index 0000000..143bdb4
+--- /dev/null
++++ b/demo/mysql.sh
+@@ -0,0 +1,28 @@
++#!/usr/bin/env bash
++
++#shell连接mysql数据库
++#解决Linux下mysql.sock文件不存在的方法
++#  查找到mysql.sock真正存在的位置  可以使用locate或者find
++#  ln -s mysql.sock文件的位置   报错找不到的位置
++#  也就是给mysql.sock创建一个快捷方式到mysql启动查找的位置
++#  lsof -i:21 查看端口占用
++
++
++MYSQL=`which mysql`
++#password=root
++
++#1.Windows下将sql数据库备份拷贝到磁盘目录如：F:\testdb.sql
++#2.cmd进入命令行
++#3.登陆mysql数据库：mysql -uroot -p登陆mysql服务器
++#4.后执行导入数据命令
++#mysql> use dbtest; //设置当前要导入数据的dbtest数据库
++#mysql> set names utf8; //设置编码
++#mysql> source F:\testdb.sql; //导入数据
++addr=`which mysql`
++mysql="$addr -uroot -p"
++sql="show databases;use test;show tables;select * from t1;"
++#sql="use test;show databases;"
++$mysql -e "$sql"
++
++
++exit 0
+\ No newline at end of file
+diff --git a/demo/readMe.txt b/demo/readMe.txt
+new file mode 100755
+index 0000000..3b4d417
+--- /dev/null
++++ b/demo/readMe.txt
+@@ -0,0 +1,4 @@
++##文件对应功能
++mysql.sh       #连接mysql数据库
++logRotate.sh   #日志切割
++
+diff --git "a/myself/bash\345\270\270\347\224\250\345\221\275\344\273\244.txt" "b/myself/bash\345\270\270\347\224\250\345\221\275\344\273\244.txt"
+new file mode 100755
+index 0000000..19f62cb
+--- /dev/null
++++ "b/myself/bash\345\270\270\347\224\250\345\221\275\344\273\244.txt"
+@@ -0,0 +1,88 @@
++
++1 tab键补齐
++2 命令历史(!5 重新执行第5条历史命令 ctrl+L 清屏   !ser重新执行最后一条ser开头的命令)
++3 命令补齐
++4 命令别名(查看 alias )
++5 输出重定向(>覆盖式重定向 >>追加式重定向  1> 正确重定向  2>错误重定向 ls nofile 2> error.txt )
++
++
++free -m 查看内存状况
++free -m|grep -i mem|awk '{print $4}'匹配查找结果中内存的使用,把第四列打印
++
++#用户信息(用户)
++useradd uname添加一个用户
++userdel -r uname删除一个用户
++passwd uname 修改user1的密码
++id uname查看一个用户
++
++
++#用户组(组)
++把用户加入组
++gpasswd -a user1 root 把user1用户加入到root组
++把组中用户删除
++gpasswd -d user1 root 把user1用户从root组删除
++
++#权限 chmod  acl  sudo
++chmod o+w file #给other file的写入权限
++(同时other用户组的所有用户都拥有w的权限,可以把user1加入到具有写入权限的用户组)
++chmod o-x,o-w file
++chmod g-w file
++
++#权限细化(acl 分配权限)
++root file rw-
++root file r--
++other file r--
++user1 file rw
++user2 file rx
++user3 file wx
++user4 file rwx
++
++setfacl 设置文件权限 setfacl -m u:user1:rw root.txt
++#上边的需求可以用以下代码实现
++setfacl -m u:user1:rw root.txt
++setfacl -m u:user2:rx root.txt
++setfacl -m u:user3:wx root.txt
++setfacl -m u:user4:rwx root.txt
++
++getfacl 获取文件权限 getfacl root.txt
++
++删除文件权限
++setfacl -x user:user3  root.txt
++
++清空文件权限
++setfacl -b root.txt  #恢复到最初的权限设置
++
++创建和删除文件权限
++#需要对目录设置facl权限即可
++setfacl -m u:user:rwx ~/www/shell
++
++#设置文件目录以及子目录的权限
++setfacl -m u:user4:rwx  -R ~/www/shell
++
++#后期目录中添加的的子目录和文件继承当前目录的权限
++setfacl -m d:u:user4:rwx -R ~/www/shell   #d代表defalut 就是跟当前目录设置现有的目录权限
++
++#sudo设置用户对命令的执行权限
++1 设置
++visudo
++user4 localhost=/usr/sbin/useradd #need pass
++
++user2 ALL=NOPASSWD:/usr/bin/passwd #no need pass
++
++2 使用sudo授权命令
++sudo /usr/sbin/useradd user4
++sudo /usr/sbin/userdel -r user4
++
++3 使用无密码的sudo授权命令
++sudo localhost=NOPASSWD:/usr/sbin/userdel -r user4
++sudo ALL=NOPASSED:/usr/sbin/userdel -r user4
++
++
++
++
++
++
++
++
++
++
+diff --git a/myself/clear.sh b/myself/clear.sh
+new file mode 100755
+index 0000000..2305873
+--- /dev/null
++++ b/myself/clear.sh
+@@ -0,0 +1,7 @@
++#!/usr/bin/env bash
++#每周五定时清理ftp服务器上的文件
++#检测 /var/ftp/pub目录,将其中的子目录及文件的详细列表信息,当时的时间信息追加保存到/var/log/pubdir.log,然后,清空目录
++
++date >> ~/www/shell/myself/pubdir.log
++ls -lhR ~/www/shell/Log/2.txt >> ~/www/shell/myself/pubdir.log
++rm -rf ~/www/shell/Log/*
+\ No newline at end of file
+diff --git a/myself/config.txt b/myself/config.txt
+new file mode 100755
+index 0000000..3142e9a
+--- /dev/null
++++ b/myself/config.txt
+@@ -0,0 +1,53 @@
++lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
++	options=3<RXCSUM,TXCSUM>
++	inet6 ::1 prefixlen 128 
++	inet 127.0.0.1 netmask 0xff000000 
++	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
++	nd6 options=1<PERFORMNUD>
++gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
++stf0: flags=0<> mtu 1280
++en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
++	ether 98:01:a7:9b:dd:51 
++	inet6 fe80::9a01:a7ff:fe9b:dd51%en0 prefixlen 64 scopeid 0x4 
++	inet 192.168.1.101 netmask 0xffffff00 broadcast 192.168.1.255
++	nd6 options=1<PERFORMNUD>
++	media: autoselect
++	status: active
++en1: flags=963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX> mtu 1500
++	options=60<TSO4,TSO6>
++	ether 4a:00:06:5a:a4:50 
++	media: autoselect <full-duplex>
++	status: inactive
++en2: flags=963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX> mtu 1500
++	options=60<TSO4,TSO6>
++	ether 4a:00:06:5a:a4:51 
++	media: autoselect <full-duplex>
++	status: inactive
++bridge0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
++	options=63<RXCSUM,TXCSUM,TSO4,TSO6>
++	ether 9a:01:a7:b9:8c:00 
++	Configuration:
++		id 0:0:0:0:0:0 priority 0 hellotime 0 fwddelay 0
++		maxage 0 holdcnt 0 proto stp maxaddr 100 timeout 1200
++		root id 0:0:0:0:0:0 priority 0 ifcost 0 port 0
++		ipfilter disabled flags 0x2
++	member: en1 flags=3<LEARNING,DISCOVER>
++	        ifmaxaddr 0 port 5 priority 0 path cost 0
++	member: en2 flags=3<LEARNING,DISCOVER>
++	        ifmaxaddr 0 port 6 priority 0 path cost 0
++	nd6 options=1<PERFORMNUD>
++	media: <unknown type>
++	status: inactive
++p2p0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> mtu 2304
++	ether 0a:01:a7:9b:dd:51 
++	media: autoselect
++	status: inactive
++awdl0: flags=8943<UP,BROADCAST,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1484
++	ether 52:4a:a4:02:e4:7d 
++	inet6 fe80::504a:a4ff:fe02:e47d%awdl0 prefixlen 64 scopeid 0x9 
++	nd6 options=1<PERFORMNUD>
++	media: autoselect
++	status: active
++utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
++	inet6 fe80::626a:b514:d4e2:d30e%utun0 prefixlen 64 scopeid 0xa 
++	nd6 options=1<PERFORMNUD>
+diff --git a/myself/df.txt b/myself/df.txt
+new file mode 100755
+index 0000000..e4adb25
+--- /dev/null
++++ b/myself/df.txt
+@@ -0,0 +1,9 @@
++Filesystem                     Size   Used  Avail Capacity  iused    ifree %iused  Mounted on
++/dev/disk1                    233Gi   54Gi  178Gi    24% 14265181 46716065   23%   /
++devfs                         189Ki  189Ki    0Bi   100%      654        0  100%   /dev
++map -hosts                      0Bi    0Bi    0Bi   100%        0        0  100%   /net
++map auto_home                   0Bi    0Bi    0Bi   100%        0        0  100%   /home
++10.0.11.96:/home/niujing/git   43Gi   16Gi   25Gi    39%   196029  2665571    7%   /Users/nj/www/96
++10.0.11.96:/home/niujing/git   43Gi   18Gi   23Gi    43%   196203  2665397    7%   /Users/nj/www/96
++/dev/disk2s1                  500Mi  228Mi  272Mi    46%    58342    69646   46%   /Volumes/JDK 8 Update 101
++/dev/disk3s2                  110Mi   88Mi   23Mi    80%    22502     5760   80%   /Volumes/QQ
+diff --git a/myself/for-2.sh b/myself/for-2.sh
+new file mode 100755
+index 0000000..1c8bd94
+--- /dev/null
++++ b/myself/for-2.sh
+@@ -0,0 +1,7 @@
++#!/bin/bash
++
++for((i=1;i<10;i++));
++do
++   echo $i;
++   sleep 1;
++done
+\ No newline at end of file
+diff --git a/myself/login.sh b/myself/login.sh
+new file mode 100755
+index 0000000..a909afe
+--- /dev/null
++++ b/myself/login.sh
+@@ -0,0 +1,11 @@
++#!/usr/bin/env bash
++
++#如果用户名为nj并且登录密码为nj,则登录成功,同时发送邮件
++read -p "name:" name
++read -p "pass:" pass
++if [ "$name" = 'nj' ] && [ "$pass" = 'nj' ]
++then
++       echo 'login success'|mail -s 'login successs' nj@Niujingmf@123
++else
++       echo 'login fail,sombody try to login your computer'|mail -s 'warning' nj@Niujingmf@123
++fi
+\ No newline at end of file
+diff --git a/myself/pubdir.log b/myself/pubdir.log
+new file mode 100755
+index 0000000..e5c9999
+--- /dev/null
++++ b/myself/pubdir.log
+@@ -0,0 +1,6 @@
++Thu Sep 15 09:03:52 PDT 2016
++Thu Sep 15 09:05:41 PDT 2016
++Thu Sep 15 09:05:55 PDT 2016
++Thu Sep 15 09:06:04 PDT 2016
++Thu Sep 15 09:07:12 PDT 2016
++-rw-r--r--  1 nj  staff    18B Sep 15 09:06 /Users/nj/www/shell/Log/2.txt
+diff --git a/myself/redirect.sh b/myself/redirect.sh
+new file mode 100755
+index 0000000..421e7c3
+--- /dev/null
++++ b/myself/redirect.sh
+@@ -0,0 +1,4 @@
++#!/usr/bin/env bash
++#redirect.sh
++
++ifconfig
+\ No newline at end of file
+diff --git a/readme.txt b/readme.txt
+old mode 100644
+new mode 100755
+diff --git a/rotate.sh b/rotate.sh
+new file mode 100755
+index 0000000..2d0acdf
+--- /dev/null
++++ b/rotate.sh
+@@ -0,0 +1,22 @@
++#!/usr/bin/env bash
++
++#shell循环
++
++# 使用for
++for var in para1 ..paran
++do
++#       do something
++done
++
++#使用while
++while [ express ]
++do
++#        do something
++done
++
++#使用until
++until [ express ]
++do
++#        do something
++done
++
+diff --git a/summery.txt b/summery.txt
+new file mode 100755
+index 0000000..298587d
+--- /dev/null
++++ b/summery.txt
+@@ -0,0 +1,230 @@
++##位置变量
++$1--$9 表示第1-9个入参
++$# 表示入参的个数
++$* 会输出入参 $@等同于$*
++$? 优先表示条件判断的结果,然后表示上一条指令执行的结果 0表示正确执行 其它表示执行出错
++$0 表示当前脚本的名称
++$$ 当前进程的PID
++$! 上一个命令的PID
++{} 匹配所有查找到的文件
++find path -type/name/u  *.txt -print -exec '{}' ';'>filelist.txt
++
++
++##文件查找
++-user 指定文件所有者
++-perm 指定文件权限
++
++-mtime 修改时间
++-atime 最后访问时间
++-ctime 文件属性的最后改变时间
++ n  ..的时间=几天
+++n  ..的时间多于几天
++-n  ..的时间少于几天
++
++-type
++f 普通文件
++l 链接文件
++d 目录文件
++b 搜索块文件
++c 字符设备文件
++p 管道文件
++s socket文件
++条件之间-o连接表示 或 -a连接表示与
++
++#file可以测试文件的类型
++
++# 创建本地文件索引
++#locate查找的是本地数据库,而不是文件系统
++#sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
++
++
++#使用dd进行文件备份
++dd if=[ifile] of=[outfile] count=[blocks] bs=[bytes]
++if告诉dd从文件从读,而不是从标准输入 可以通过ibs和obs指定每次读取和写入的字节数
++默认512
++
++
++##算术操作符(数字的比较):
++-eq 等于
++-ne 不等于
++-gt 大于
++-lt 小于
++-le 小于等于(less than or equal to)
++-ge 大于等于
++
++##使用单引号,可以很方便的输出特殊字符,而不用每个都转义一下
++
++
++
++##
++查看帮助信息
++help  help
++man ls
++info ls
++
++
++
++##特殊转义字符
++\b     打印一个backspace
++\c     不输出后边的字符串
++\n     打印换行符
++\t     打印水平制表符
++\v     打印垂直制表符
++printf遇到这些字符,不会解释,要加上-e  echo会主动解释
++
++
++##几种常见特殊的符号表示：
++ [[:upper:]]：所有大写字母
++ [[:lower:]]：所有小写字母
++ [[:alpha:]]：所有字母
++ [[:digit:]]：所有数字
++ [[:alnum:]]：所有的字母和数字
++ [[:space:]]：所有空白字符
++ [[:punct:]]：所有标点符号
++
++##变量
++NAME=value #等号的两边不能有空格
++NAME是自己定义的变量名,通常使用大写字母
++echo -e选项表示处理特殊字符
++echo -n
++
++##变量替换
++syntax              desc
++${var:-val}     如果有变量var没有被定义,或者为空,使用默认值,代替var的值,但不改变var的值
++${var:-val}     var不为空,使用默认值,代替var的值,但不改变var的值
++${var:=val}     如果有变量var没有被定义,或者为空,就把val赋给它
++${var:?msg}     如果有变量var为空,那么打印msg到标准错误输出,并退出脚本
++
++
++##使用--export选项可以吧一个本地变量倒入到环境中,成为环境变量
++在shell中定义并导出环境变量export name=value或者使name=value;export name
++在用户主目录下的.bashrc文件中修改环境变量PATH
++在bash中子进程和父进程的变量引用的是不同的存储空间,不能通过修改子进程的值来修改父进程
++
++
++##使用[ $# -gt 0 ]或者是if [ -z $1 ]
++
++
++## 可以通过OLDPWD回到上次的目录
++## 可以导出到grep查找
++env | grep PWD查找自己关心的变量
++
++##在测试命令[]中,使用 = 比较是否相等
++[ -n string ] #字符串长度非0返回真(1)
++[ -z string ] #字符串长度0返回真(0)
++[ string1 = string2 ] #字符串相等返回真
++[ string1 != string2 ] #字符串不相等返回真
++
++
++
++
++## 注意:
++if 的两边必须要有空格
++
++
++#sort file 把文件里的行排序
++sort -u file #去除重复项
++sort -r file #sort默认升序排列,加上-r降序排列
++#sort默认结果是输出到标准输出,需要重定向sort file > filesort
++#才能实现,但是要把排序结果输出到原文件,重定向不能实现
++sort -r number.txt -o number.txt #可以实现 -o选项
++#sort默认按位排序,导致10比2小 -n选项告诉它按数字排序
++sort -n file
++#有一个内容如下的文件(test.txt)
++banana:30:5.5
++apple:10:2.5
++要求第二列排序? sort提供了-t选项,可以设定间隔符(cut和paste的-d)
++sort -n -k 2 -t: test.txt
++-f忽略大小写
++-c检测文件是否已排序,乱序,输出第一个乱序行的信息,最后返回1
++-C检测文件是否已排序,乱序无输出,返回1
++-M以月来排序
++
++##continue n 的含义是结束当前迭代循环,从包裹n的第n层循环开始第n层的下一次迭代
++
++grep -R test /etc/ 在etc目录下查找所有包含test关键词的文件
++grep -A2 -B3 test test.txt在test.txt中查找包含test关键字并将这一行的前3行和后两行打印出来
++选项参考
++-r 不包含
++-i 忽略大小写
++\  转义特殊字符
++-n 匹配结果显示行号
++-c 统计一共有多少个匹配项
++-v 显示不包含匹配文本的所有行
++-E 加强正则匹配
++###匹配
++^  匹配开头
++$  匹配开头结尾
++.  匹配任意字符
++*  匹配前边的字符0次或者n次
++?  匹配前边的字符至少一次
++
++
++
++
++
++##shell支持的通配符
++* 匹配0或多个任意字符
++? 匹配任意一个字符
++[] 匹配指定字符范围内的任意一个字符
++^或!表示非
++##一般情况下,通配符*不会匹配隐藏文件,要./[.]bashrc这样用
++
++
++#tar打包文件
++-c  --create 表示要执行的操作是新建打包文件
++-f 从一个文件读写数据到另一个文件
++-x  --extract 解包文件
++-t  --list在不解压文件的情况下查看文件列表
++-d  --diff 查看tar包文件和相应文件系统有什么区别
++-r  --append表示追加文件到tar包的结尾
++-v  --verbose 显示更多关于被打包文件的详细信息
++
++
++#在Linux中可以使用trap -l 或者 kill -l来查看所有的信号
++
++sed 命令的使用
++$ some_command|sed 'edit commands' #把上一个命令的输出作为sed的输入
++或者
++$ sed 'edit commands' files #使用命令行参数读取文件内容,而不是从标准输入读取
++/pattern/action
++Action   描述
++p        打印行 print
++d        删除行 delete
++s        用一个新的表达式替换旧的表达式 substitute匹配时不区分大小写
++num      只取代第num个匹配
++w Filename 如果匹配成功,吧结果写入到文件filename中
++i/I
++
++集合            匹配
++[a-z]        匹配一个小写字母
++[A-Z]        匹配一个大写字母
++[a-zA-Z]     匹配一个字母
++[a-zA-Z0-9]  匹配一个数字或字母
++
++
++printf格式控制符
++%c        打印一个字符
++%d%i      打印一个十进制数字
++%m.nf     打印浮点数,m n都是数字,分别指定了小数点前后的位数
++%o        打印无符号八进制数
++%s        打印字符串
++%x%X      打印无符号的十六进制数,使用%X打印大写字母
++%%        输出字符串%
++
++awk内建变量
++
++FILENAME    awk当前读取数据的文件,如果从标准输入读取,变量的值为-,在BEGIN规则中变量为空
++FNR         当前行号,读取1行加一,读取一个新的文件时设置为0
++NR          所处理纪录的个数,每一个新行被读取,值自动加1
++FS          输入行的分割符,默认是空格,可以通过-F指定
++NF          当前行包含的字段数,每读入一个新的纪录,它的值被重新设定
++OFS         输出时的字段分隔符,默认 空格
++ORS         输出时的纪录分隔符,默认换行
++RS          输入时的记录分隔符,默认换行
++
++awk函数
++length() 返回字符串的长度
++
++
++
+-- 
+2.10.1 (Apple Git-78)
+
